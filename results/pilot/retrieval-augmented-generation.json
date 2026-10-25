@@ -1,0 +1,375 @@
+{
+  "document": "retrieval-augmented-generation",
+  "configuration": {
+    "chunk_size": 1000,
+    "overlap": 150,
+    "k": 5,
+    "chunk_ids": [
+      "chunk-0001",
+      "chunk-0002",
+      "chunk-0003",
+      "chunk-0004",
+      "chunk-0005",
+      "chunk-0006",
+      "chunk-0007",
+      "chunk-0008",
+      "chunk-0009",
+      "chunk-0010",
+      "chunk-0011",
+      "chunk-0012",
+      "chunk-0013",
+      "chunk-0014",
+      "chunk-0015",
+      "chunk-0016",
+      "chunk-0017",
+      "chunk-0018",
+      "chunk-0019",
+      "chunk-0020",
+      "chunk-0021",
+      "chunk-0022",
+      "chunk-0023",
+      "chunk-0024",
+      "chunk-0025",
+      "chunk-0026",
+      "chunk-0027",
+      "chunk-0028",
+      "chunk-0029",
+      "chunk-0030",
+      "chunk-0031",
+      "chunk-0032",
+      "chunk-0033",
+      "chunk-0034",
+      "chunk-0035",
+      "chunk-0036",
+      "chunk-0037",
+      "chunk-0038",
+      "chunk-0039",
+      "chunk-0040",
+      "chunk-0041",
+      "chunk-0042",
+      "chunk-0043",
+      "chunk-0044",
+      "chunk-0045",
+      "chunk-0046",
+      "chunk-0047",
+      "chunk-0048",
+      "chunk-0049",
+      "chunk-0050",
+      "chunk-0051",
+      "chunk-0052",
+      "chunk-0053",
+      "chunk-0054",
+      "chunk-0055",
+      "chunk-0056",
+      "chunk-0057",
+      "chunk-0058",
+      "chunk-0059",
+      "chunk-0060",
+      "chunk-0061",
+      "chunk-0062",
+      "chunk-0063",
+      "chunk-0064",
+      "chunk-0065",
+      "chunk-0066",
+      "chunk-0067",
+      "chunk-0068",
+      "chunk-0069",
+      "chunk-0070",
+      "chunk-0071",
+      "chunk-0072",
+      "chunk-0073",
+      "chunk-0074",
+      "chunk-0075",
+      "chunk-0076",
+      "chunk-0077",
+      "chunk-0078",
+      "chunk-0079",
+      "chunk-0080",
+      "chunk-0081",
+      "chunk-0082",
+      "chunk-0083",
+      "chunk-0084",
+      "chunk-0085",
+      "chunk-0086",
+      "chunk-0087",
+      "chunk-0088",
+      "chunk-0089",
+      "chunk-0090",
+      "chunk-0091",
+      "chunk-0092",
+      "chunk-0093"
+    ]
+  },
+  "summarization": {
+    "lead": {
+      "overview": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when ﬁne-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-speciﬁc architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pretrained models with a differentiable access mechanism to explicit non-parametric memory have so far been only investigated for extractive downstream tasks. We explore a general-purpose ﬁne-tuning recipe for retrieval-augmented generation (RAG) — models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever.",
+      "sections": {
+        "Research problem": "Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. We explore a general-purpose ﬁne-tuning recipe for retrieval-augmented generation (RAG) — models which combine pre-trained parametric and non-parametric memory for language generation. We endow pre-trained, parametric-memory generation models with a non-parametric memory through a general-purpose ﬁne-tuning approach which we refer to as retrieval-augmented generation (RAG).",
+        "Research objectives": "Our RAG models achieve state-of-the-art results on open Natural Questions [29], WebQuestions [3] and CuratedTrec [2] and strongly outperform recent approaches that use specialised pre-training objectives on TriviaQA [24].",
+        "Proposed methodology": "We explore RAG models, which use the input sequencex to retrieve text documentsz and use them as additional context when generating the target sequence y. As shown in Figure 1, our models leverage two components: (i) a retriever pη(z|x) with parametersη that returns (top-K truncated) distributions over text passages given a queryx and (ii) a generatorpθ(yi|x,z,y 1:i−1) parametrized 1Code to run experiments with RAG has been open-sourced as part of the HuggingFace Transformers Library [66] and can be found at https://github.com/huggingface/transformers/blob/master/ examples/rag/. An interactive demo of RAG models can be found at https://huggingface.co/rag/ 2 byθ that generates a current token based on a context of the previousi− 1 tokensy1:i−1, the original inputx and a retrieved passagez.",
+        "Dataset and experimental setup": "We experiment with RAG in a wide range of knowledge-intensive tasks. For all experiments, we use a single Wikipedia dump for our non-parametric knowledge source. We now discuss experimental details for each task.",
+        "Main findings": "4.1 Open-domain Question Answering Table 1 shows results for RAG along with state-of-the-art models. RAG combines the generation ﬂexibility of the “closed-book” (parametric only) approaches and the performance of \"open-book\" retrieval-based approaches. Unlike REALM and T5+SSM, RAG enjoys strong results without expensive, specialized “salient span masking” pre-training [20].",
+        "Limitations and future work": "In future work, it may be fruitful to investigate if the two components can be jointly pre-trained from scratch, either with a denoising objective similar to BART or some another objective."
+      },
+      "rouge": {
+        "rouge1": 0.3211009174311927,
+        "rouge2": 0.08333333333333333,
+        "rougeL": 0.12844036697247707
+      }
+    },
+    "textrank": {
+      "overview": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when ﬁne-tuned on downstream NLP tasks. Pretrained models with a differentiable access mechanism to explicit non-parametric memory have so far been only investigated for extractive downstream tasks. We explore a general-purpose ﬁne-tuning recipe for retrieval-augmented generation (RAG) — models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We ﬁne-tune and evaluate our models on a wide range of knowledgeintensive NLP tasks and set the state of the art on three open domain QA tasks, outperforming parametric seq2seq models and task-speciﬁc retrieve-and-extract architectures. For language generation tasks, we ﬁnd that RAG models generate more speciﬁc, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.",
+      "sections": {
+        "Research problem": "Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. We explore a general-purpose ﬁne-tuning recipe for retrieval-augmented generation (RAG) — models which combine pre-trained parametric and non-parametric memory for language generation. We endow pre-trained, parametric-memory generation models with a non-parametric memory through a general-purpose ﬁne-tuning approach which we refer to as retrieval-augmented generation (RAG).",
+        "Research objectives": "Our RAG models achieve state-of-the-art results on open Natural Questions [29], WebQuestions [3] and CuratedTrec [2] and strongly outperform recent approaches that use specialised pre-training objectives on TriviaQA [24].",
+        "Proposed methodology": "In one approach, RAG-Sequence, the model uses the same document to predict each target token. The second approach, RAG-Token, can predict each target token based on a different document. Concretely, the top K documents are retrieved using the retriever, and the generator produces the output sequence probability for each document, which are then marginalized, pRAG-Sequence(y|x) ≈ ∑ z∈top-k(p(·|x)) pη(z|x)pθ(y|x,z ) = ∑ z∈top-k(p(·|x)) pη(z|x) N∏ i pθ(yi|x,z,y 1:i−1) RAG-Token Model In the RAG-Token model we can draw a different latent document for each target token and marginalize accordingly.",
+        "Dataset and experimental setup": "We experiment with RAG in a wide range of knowledge-intensive tasks. For all experiments, we use a single Wikipedia dump for our non-parametric knowledge source. We now discuss experimental details for each task.",
+        "Main findings": "4.1 Open-domain Question Answering Table 1 shows results for RAG along with state-of-the-art models. 4.2 Abstractive Question Answering As shown in Table 2, RAG-Sequence outperforms BART on Open MS-MARCO NLG by 2.6 Bleu points and 2.6 Rouge-L points. 4.3 Jeopardy Question Generation Table 2 shows that RAG-Token performs better than RAG-Sequence on Jeopardy question generation, with both models outperforming BART on Q-BLEU-1.",
+        "Limitations and future work": "In future work, it may be fruitful to investigate if the two components can be jointly pre-trained from scratch, either with a denoising objective similar to BART or some another objective."
+      },
+      "rouge": {
+        "rouge1": 0.36974789915966394,
+        "rouge2": 0.1271186440677966,
+        "rougeL": 0.25210084033613445
+      }
+    }
+  },
+  "retrieval": {
+    "bm25": {
+      "mean_precision_at_k": 0.24000000000000005,
+      "mean_recall_at_k": 0.55,
+      "questions": [
+        {
+          "question": "Which parametric and non-parametric components form the RAG model?",
+          "retrieved_chunk_ids": [
+            "chunk-0006",
+            "chunk-0050",
+            "chunk-0002",
+            "chunk-0035",
+            "chunk-0008"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 1.0
+        },
+        {
+          "question": "What external knowledge source and retriever does the implementation use?",
+          "retrieved_chunk_ids": [
+            "chunk-0008",
+            "chunk-0051",
+            "chunk-0004",
+            "chunk-0092",
+            "chunk-0019"
+          ],
+          "precision_at_k": 0.0,
+          "recall_at_k": 0.0
+        },
+        {
+          "question": "How do RAG-Sequence and RAG-Token differ?",
+          "retrieved_chunk_ids": [
+            "chunk-0017",
+            "chunk-0083",
+            "chunk-0012",
+            "chunk-0044",
+            "chunk-0033"
+          ],
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.25
+        },
+        {
+          "question": "Which four open-domain QA datasets were evaluated?",
+          "retrieved_chunk_ids": [
+            "chunk-0020",
+            "chunk-0087",
+            "chunk-0028",
+            "chunk-0091",
+            "chunk-0083"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 1.0
+        },
+        {
+          "question": "What generation qualities improved relative to the BART baseline?",
+          "retrieved_chunk_ids": [
+            "chunk-0015",
+            "chunk-0009",
+            "chunk-0038",
+            "chunk-0083",
+            "chunk-0034"
+          ],
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.5
+        }
+      ]
+    },
+    "tfidf": {
+      "mean_precision_at_k": 0.32,
+      "mean_recall_at_k": 0.7,
+      "questions": [
+        {
+          "question": "Which parametric and non-parametric components form the RAG model?",
+          "retrieved_chunk_ids": [
+            "chunk-0035",
+            "chunk-0050",
+            "chunk-0006",
+            "chunk-0008",
+            "chunk-0002"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 1.0
+        },
+        {
+          "question": "What external knowledge source and retriever does the implementation use?",
+          "retrieved_chunk_ids": [
+            "chunk-0008",
+            "chunk-0051",
+            "chunk-0019",
+            "chunk-0004",
+            "chunk-0083"
+          ],
+          "precision_at_k": 0.0,
+          "recall_at_k": 0.0
+        },
+        {
+          "question": "How do RAG-Sequence and RAG-Token differ?",
+          "retrieved_chunk_ids": [
+            "chunk-0013",
+            "chunk-0017",
+            "chunk-0012",
+            "chunk-0033",
+            "chunk-0083"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.5
+        },
+        {
+          "question": "Which four open-domain QA datasets were evaluated?",
+          "retrieved_chunk_ids": [
+            "chunk-0087",
+            "chunk-0020",
+            "chunk-0091",
+            "chunk-0086",
+            "chunk-0028"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 1.0
+        },
+        {
+          "question": "What generation qualities improved relative to the BART baseline?",
+          "retrieved_chunk_ids": [
+            "chunk-0009",
+            "chunk-0034",
+            "chunk-0003",
+            "chunk-0083",
+            "chunk-0033"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 1.0
+        }
+      ]
+    }
+  },
+  "qa_predictions": [
+    {
+      "question": "Which parametric and non-parametric components form the RAG model?",
+      "answerable": true,
+      "reference_answer": "The parametric memory is a pretrained seq2seq transformer, and the non-parametric memory is a dense vector index of Wikipedia accessed by a pretrained neural retriever.",
+      "generated_answer": "We build RAG models where the parametric memory is a pre-trained seq2seq transformer, and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. [S1] We explore a general-purpose ﬁne-tuning recipe for retrieval-augmented generation (RAG) — models which combine pre-trained parametric and non-parametric memory for language generation. [S3] We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. [S3]",
+      "cited_pages": [
+        1,
+        2
+      ],
+      "insufficient_evidence": false,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "What external knowledge source and retriever does the implementation use?",
+      "answerable": true,
+      "reference_answer": "It uses a dense vector index of Wikipedia and the Dense Passage Retriever, with BART as the generator.",
+      "generated_answer": "Our results highlight the beneﬁts of combining parametric and non-parametric memory with generation for knowledge-intensive tasks—tasks that humans could not reasonably be expected to perform without access to an external knowledge source. [S1] With these advantages also come potential downsides: Wikipedia, or any potential external knowledge source, will probably never be entirely factual and completely devoid of bias. [S2] For all experiments, we use a single Wikipedia dump for our non-parametric knowledge source. [S5]",
+      "cited_pages": [
+        2,
+        4,
+        10
+      ],
+      "insufficient_evidence": false,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "How do RAG-Sequence and RAG-Token differ?",
+      "answerable": true,
+      "reference_answer": "RAG-Sequence uses the same retrieved document to generate the complete sequence. RAG-Token can draw a different latent document for each target token.",
+      "generated_answer": "2.5 Decoding At test time, RAG-Sequence and RAG-Token require different ways to approximatearg maxyp(y|x). [S1] For Open-MSMarco and Jeopardy question generation, we report test numbers using ten retrieved documents for both RAG-Token and RAG-Sequence, and we also train a BART-large model as a baseline. [S2] Figure 3 (left) shows that retrieving more documents at test time monotonically improves Open-domain QA results for RAG-Sequence, but performance peaks for RAG-Token at 10 retrieved documents. [S4]",
+      "cited_pages": [
+        4,
+        8,
+        17
+      ],
+      "insufficient_evidence": false,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "Which four open-domain QA datasets were evaluated?",
+      "answerable": true,
+      "reference_answer": "The paper evaluated Natural Questions, TriviaQA, WebQuestions, and CuratedTrec, reporting Exact Match scores.",
+      "generated_answer": "We consider four popular open-domain QA datasets: Natural Questions (NQ) [29], TriviaQA (TQA) [24]. [S1] TriviaQA Evaluation setups The open-domain QA community customarily uses public development datasets as test datasets, as test data for QA datasets is often restricted and dedicated to reading compehension purposes. [S2] We report our results using the datasets splits used in DPR [26], which are consistent with common practice in Open-domain QA. [S2]",
+      "cited_pages": [
+        4,
+        18
+      ],
+      "insufficient_evidence": false,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "What generation qualities improved relative to the BART baseline?",
+      "answerable": true,
+      "reference_answer": "On MS-MARCO and Jeopardy question generation, the RAG models produced responses that were more factual, specific, and diverse than the BART baseline.",
+      "generated_answer": "generation, we experiment with MS-MARCO [1] and Jeopardy question generation, and we ﬁnd that our models generate responses that are more factual, speciﬁc, and diverse than a BART baseline. [S2] Task Input Model Generation MSMARCO deﬁne middle ear BART ?The middle ear is the part of the ear between the middle ear and the nose. [S3] For Open-MSMarco and Jeopardy question generation, we report test numbers using ten retrieved documents for both RAG-Token and RAG-Sequence, and we also train a BART-large model as a baseline. [S4]",
+      "cited_pages": [
+        2,
+        7,
+        17
+      ],
+      "insufficient_evidence": false,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "What Exact Match score did RAG achieve on SQuAD?",
+      "answerable": false,
+      "reference_answer": "Not reported. SQuAD is not one of the open-domain QA datasets evaluated in this paper.",
+      "generated_answer": "The uploaded paper does not provide enough evidence to answer this question.",
+      "cited_pages": [],
+      "insufficient_evidence": true,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    }
+  ]
+}

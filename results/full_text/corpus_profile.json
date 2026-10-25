@@ -1,0 +1,59 @@
+{
+  "requested_records": 600,
+  "extracted_full_papers": 595,
+  "excluded_error_records": [
+    {
+      "paper_id": "paper-0313",
+      "arxiv_id": "2001.05375v1",
+      "stage": "download",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "paper_id": "paper-0383",
+      "arxiv_id": "2411.10463v3",
+      "stage": "download",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "paper_id": "paper-0518",
+      "arxiv_id": "0811.3537v1",
+      "stage": "extract",
+      "error": "LimitReachedError: Reached maximum number of tokens per stream."
+    },
+    {
+      "paper_id": "paper-0541",
+      "arxiv_id": "2304.07999v2",
+      "stage": "download",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    },
+    {
+      "paper_id": "paper-0597",
+      "arxiv_id": "2110.09271v3",
+      "stage": "download",
+      "error": "HTTPError: HTTP Error 404: Not Found"
+    }
+  ],
+  "pages": {
+    "total": 12836,
+    "mean": 21.57310924369748,
+    "median": 16.0,
+    "maximum": 295
+  },
+  "extracted_words": {
+    "total": 6607965,
+    "mean": 11105.823529411764,
+    "median": 9243.0,
+    "maximum": 117807
+  },
+  "abstract_token_coverage": {
+    "mean": 0.9772163884855161,
+    "median": 0.9908256880733946,
+    "minimum": 0.3333333333333333,
+    "below_0_80": 9
+  },
+  "summarization_body_boundaries": {
+    "abstract_to_introduction_boundary": 268,
+    "first_page_dropped": 327
+  },
+  "note": "595 records accepted by the user after four 404 downloads and one parser-limit failure. Full text is local and excluded from Git."
+}

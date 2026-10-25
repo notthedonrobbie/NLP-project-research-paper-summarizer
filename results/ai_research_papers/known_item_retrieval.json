@@ -1,0 +1,4904 @@
+{
+  "task": "Known-item title-to-abstract retrieval; titles are queries and titles are excluded from indexed documents.",
+  "papers": 600,
+  "cutoffs": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "bootstrap": {
+    "resamples": 5000,
+    "seed": 2026,
+    "unit": "paper"
+  },
+  "methods": {
+    "bm25": {
+      "mrr": 0.9046190476190477,
+      "mrr_95ci": [
+        0.883600992063492,
+        0.9245101190476189
+      ],
+      "hit_rate": {
+        "k1": {
+          "mean": 0.8683333333333333,
+          "95ci": [
+            0.84,
+            0.895
+          ]
+        },
+        "k3": {
+          "mean": 0.935,
+          "95ci": [
+            0.915,
+            0.9533333333333334
+          ]
+        },
+        "k5": {
+          "mean": 0.9466666666666667,
+          "95ci": [
+            0.9283333333333333,
+            0.9633333333333334
+          ]
+        },
+        "k10": {
+          "mean": 0.965,
+          "95ci": [
+            0.95,
+            0.9783333333333334
+          ]
+        }
+      },
+      "median_rank_when_found_in_top10": 1.0,
+      "not_found_in_top10": 21
+    },
+    "tfidf": {
+      "mrr": 0.9030456349206349,
+      "mrr_95ci": [
+        0.882195486111111,
+        0.9235377976190475
+      ],
+      "hit_rate": {
+        "k1": {
+          "mean": 0.8683333333333333,
+          "95ci": [
+            0.8416666666666667,
+            0.895
+          ]
+        },
+        "k3": {
+          "mean": 0.9266666666666666,
+          "95ci": [
+            0.905,
+            0.9466666666666667
+          ]
+        },
+        "k5": {
+          "mean": 0.9533333333333334,
+          "95ci": [
+            0.935,
+            0.97
+          ]
+        },
+        "k10": {
+          "mean": 0.9716666666666667,
+          "95ci": [
+            0.9583333333333334,
+            0.9833333333333333
+          ]
+        }
+      },
+      "median_rank_when_found_in_top10": 1.0,
+      "not_found_in_top10": 17
+    }
+  },
+  "per_query": [
+    {
+      "paper_id": "paper-0001",
+      "title": "AI Thinking: A framework for rethinking artificial intelligence in practice",
+      "link": "http://arxiv.org/abs/2409.12922v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0002",
+      "title": "Intersymbolic AI: Interlinking Symbolic AI and Subsymbolic AI",
+      "link": "http://arxiv.org/abs/2406.11563v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0003",
+      "title": "Overconfident and Unconfident AI Hinder Human-AI Collaboration",
+      "link": "http://arxiv.org/abs/2402.07632v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0004",
+      "title": "Supporting AI/ML Security Workers through an Adversarial Techniques, Tools, and Common Knowledge (AI/ML ATT&CK) Framework",
+      "link": "http://arxiv.org/abs/2211.05075v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0005",
+      "title": "Navigating Fairness: Practitioners' Understanding, Challenges, and Strategies in AI/ML Development",
+      "link": "http://arxiv.org/abs/2403.15481v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0006",
+      "title": "\"Weak AI\" is Likely to Never Become \"Strong AI\", So What is its Greatest Value for us?",
+      "link": "http://arxiv.org/abs/2103.15294v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0007",
+      "title": "A Bibliometric View of AI Ethics Development",
+      "link": "http://arxiv.org/abs/2403.05551v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0008",
+      "title": "Threefold model for AI Readiness: A Case Study with Finnish Healthcare SMEs",
+      "link": "http://arxiv.org/abs/2503.14527v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0009",
+      "title": "Towards a Capability Assessment Model for the Comprehension and Adoption of AI in Organisations",
+      "link": "http://arxiv.org/abs/2305.15922v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0010",
+      "title": "Improving Health Professionals' Onboarding with AI and XAI for Trustworthy Human-AI Collaborative Decision Making",
+      "link": "http://arxiv.org/abs/2405.16424v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0011",
+      "title": "AI-in-the-Loop -- The impact of HMI in AI-based Application",
+      "link": "http://arxiv.org/abs/2303.11508v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0012",
+      "title": "Public Constitutional AI",
+      "link": "http://arxiv.org/abs/2406.16696v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0013",
+      "title": "AI Generations: From AI 1.0 to AI 4.0",
+      "link": "http://arxiv.org/abs/2502.11312v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0014",
+      "title": "Putting AI Ethics into Practice: The Hourglass Model of Organizational AI Governance",
+      "link": "http://arxiv.org/abs/2206.00335v2",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0015",
+      "title": "Navigating AI Fallibility: Examining People's Reactions and Perceptions of AI after Encountering Personality Misrepresentations",
+      "link": "http://arxiv.org/abs/2405.16355v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0016",
+      "title": "Constructing AI ethics narratives based on real-world data: Human-AI collaboration in data-driven visual storytelling",
+      "link": "http://arxiv.org/abs/2502.00637v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0017",
+      "title": "Towards Enterprise-Ready AI Deployments Minimizing the Risk of Consuming AI Models in Business Applications",
+      "link": "http://arxiv.org/abs/1906.10418v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0018",
+      "title": "Understanding Mental Models of AI through Player-AI Interaction",
+      "link": "http://arxiv.org/abs/2103.16168v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0019",
+      "title": "Interaction Design for Human-AI Choreography Co-creation",
+      "link": "http://arxiv.org/abs/2405.03999v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0020",
+      "title": "AI Governance and Accountability: An Analysis of Anthropic's Claude",
+      "link": "http://arxiv.org/abs/2407.01557v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0021",
+      "title": "Interacting with Thoughtful AI",
+      "link": "http://arxiv.org/abs/2502.18676v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0022",
+      "title": "Ethics in the Age of AI: An Analysis of AI Practitioners' Awareness and Challenges",
+      "link": "http://arxiv.org/abs/2307.10057v1",
+      "year": 2023,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0023",
+      "title": "Explainable AI improves task performance in human-AI collaboration",
+      "link": "http://arxiv.org/abs/2406.08271v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0024",
+      "title": "AI Failures: A Review of Underlying Issues",
+      "link": "http://arxiv.org/abs/2008.04073v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0025",
+      "title": "Enabling human-centered AI: A new junction and shared journey between AI and HCI communities",
+      "link": "http://arxiv.org/abs/2111.08460v4",
+      "year": 2021,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0026",
+      "title": "Assigning AI: Seven Approaches for Students, with Prompts",
+      "link": "http://arxiv.org/abs/2306.10052v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0027",
+      "title": "Trustworthy, Responsible, and Safe AI: A Comprehensive Architectural Framework for AI Safety with Challenges and Mitigations",
+      "link": "http://arxiv.org/abs/2408.12935v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0028",
+      "title": "Synergizing Self-Regulation and Artificial-Intelligence Literacy Towards Future Human-AI Integrative Learning",
+      "link": "http://arxiv.org/abs/2504.07125v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0029",
+      "title": "Enabling AI in Future Wireless Networks: A Data Life Cycle Perspective",
+      "link": "http://arxiv.org/abs/2003.00866v2",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0030",
+      "title": "The Narrow Depth and Breadth of Corporate Responsible AI Research",
+      "link": "http://arxiv.org/abs/2405.12193v1",
+      "year": 2024,
+      "bm25_rank": 7,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0031",
+      "title": "AI Cards: Towards an Applied Framework for Machine-Readable AI and Risk Documentation Inspired by the EU AI Act",
+      "link": "http://arxiv.org/abs/2406.18211v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0032",
+      "title": "Why do Experts Disagree on Existential Risk and P(doom)? A Survey of AI Experts",
+      "link": "http://arxiv.org/abs/2502.14870v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0033",
+      "title": "AI and Ethics -- Operationalising Responsible AI",
+      "link": "http://arxiv.org/abs/2105.08867v1",
+      "year": 2021,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0034",
+      "title": "AI and the creative realm: A short review of current and future applications",
+      "link": "http://arxiv.org/abs/2306.01795v1",
+      "year": 2023,
+      "bm25_rank": null,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0035",
+      "title": "Views on AI aren't binary -- they're plural",
+      "link": "http://arxiv.org/abs/2312.14230v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0036",
+      "title": "Levels of AI Agents: from Rules to Large Language Models",
+      "link": "http://arxiv.org/abs/2405.06643v2",
+      "year": 2024,
+      "bm25_rank": null,
+      "tfidf_rank": 8
+    },
+    {
+      "paper_id": "paper-0037",
+      "title": "A Survey on Offensive AI Within Cybersecurity",
+      "link": "http://arxiv.org/abs/2410.03566v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0038",
+      "title": "Tweeting AI: Perceptions of AI-Tweeters (AIT) vs Expert AI-Tweeters (EAIT)",
+      "link": "http://arxiv.org/abs/1704.08389v2",
+      "year": 2017,
+      "bm25_rank": 2,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0039",
+      "title": "Tweeting AI: Perceptions of Lay vs Expert Twitterati",
+      "link": "http://arxiv.org/abs/1709.09534v1",
+      "year": 2017,
+      "bm25_rank": null,
+      "tfidf_rank": 5
+    },
+    {
+      "paper_id": "paper-0040",
+      "title": "AI Governance for Businesses",
+      "link": "http://arxiv.org/abs/2011.10672v2",
+      "year": 2020,
+      "bm25_rank": null,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0041",
+      "title": "AI Governance and Ethics Framework for Sustainable AI and Sustainability",
+      "link": "http://arxiv.org/abs/2210.08984v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 10
+    },
+    {
+      "paper_id": "paper-0042",
+      "title": "Player-AI Interaction: What Neural Network Games Reveal About AI as Play",
+      "link": "http://arxiv.org/abs/2101.06220v2",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0043",
+      "title": "AI Liability Insurance With an Example in AI-Powered E-diagnosis System",
+      "link": "http://arxiv.org/abs/2306.01149v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0044",
+      "title": "Responsible AI: Portraits with Intelligent Bibliometrics",
+      "link": "http://arxiv.org/abs/2405.02846v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0045",
+      "title": "From Explainable to Interactive AI: A Literature Review on Current Trends in Human-AI Interaction",
+      "link": "http://arxiv.org/abs/2405.15051v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0046",
+      "title": "\"From Unseen Needs to Classroom Solutions\": Exploring AI Literacy Challenges & Opportunities with Project-based Learning Toolkit in K-12 Education",
+      "link": "http://arxiv.org/abs/2412.17243v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0047",
+      "title": "AI-RAN: Transforming RAN with AI-driven Computing Infrastructure",
+      "link": "http://arxiv.org/abs/2501.09007v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0048",
+      "title": "FairSense-AI: Responsible AI Meets Sustainability",
+      "link": "http://arxiv.org/abs/2503.02865v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0049",
+      "title": "Visions of a Discipline: Analyzing Introductory AI Courses on YouTube",
+      "link": "http://arxiv.org/abs/2407.13077v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0050",
+      "title": "The Model Mastery Lifecycle: A Framework for Designing Human-AI Interaction",
+      "link": "http://arxiv.org/abs/2408.12781v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0051",
+      "title": "The AI Pentad, the CHARME$^{2}$D Model, and an Assessment of Current-State AI Regulation",
+      "link": "http://arxiv.org/abs/2503.06353v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0052",
+      "title": "Confident AI",
+      "link": "http://arxiv.org/abs/2202.05957v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0053",
+      "title": "AI Literacy for All: Adjustable Interdisciplinary Socio-technical Curriculum",
+      "link": "http://arxiv.org/abs/2409.10552v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0054",
+      "title": "Evaluating Visual Conversational Agents via Cooperative Human-AI Games",
+      "link": "http://arxiv.org/abs/1708.05122v1",
+      "year": 2017,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0055",
+      "title": "MAILS -- Meta AI Literacy Scale: Development and Testing of an AI Literacy Questionnaire Based on Well-Founded Competency Models and Psychological Change- and Meta-Competencies",
+      "link": "http://arxiv.org/abs/2302.09319v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0056",
+      "title": "Understanding the Effect of Counterfactual Explanations on Trust and Reliance on AI for Human-AI Collaborative Clinical Decision Making",
+      "link": "http://arxiv.org/abs/2308.04375v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0057",
+      "title": "AI Hazard Management: A framework for the systematic management of root causes for AI risks",
+      "link": "http://arxiv.org/abs/2310.16727v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0058",
+      "title": "How do transportation professionals perceive the impacts of AI applications in transportation? A latent class cluster analysis",
+      "link": "http://arxiv.org/abs/2401.08915v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0059",
+      "title": "POLARIS: A framework to guide the development of Trustworthy AI systems",
+      "link": "http://arxiv.org/abs/2402.05340v1",
+      "year": 2024,
+      "bm25_rank": 5,
+      "tfidf_rank": 8
+    },
+    {
+      "paper_id": "paper-0060",
+      "title": "On the Utility of Accounting for Human Beliefs about AI Intention in Human-AI Collaboration",
+      "link": "http://arxiv.org/abs/2406.06051v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0061",
+      "title": "Co-designing an AI Impact Assessment Report Template with AI Practitioners and AI Compliance Experts",
+      "link": "http://arxiv.org/abs/2407.17374v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0062",
+      "title": "Navigating the Future of Education: Educators' Insights on AI Integration and Challenges in Greece, Hungary, Latvia, Ireland and Armenia",
+      "link": "http://arxiv.org/abs/2408.15686v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0063",
+      "title": "The AI Double Standard: Humans Judge All AIs for the Actions of One",
+      "link": "http://arxiv.org/abs/2412.06040v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0064",
+      "title": "AI threats to national security can be countered by an incident regime",
+      "link": "http://arxiv.org/abs/2503.19887v3",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0065",
+      "title": "Cybertrust: From Explainable to Actionable and Interpretable AI (AI2)",
+      "link": "http://arxiv.org/abs/2201.11117v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0066",
+      "title": "Towards Seamless Management of AI Models in High-Performance Computing",
+      "link": "http://arxiv.org/abs/2212.06352v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0067",
+      "title": "The AI Ghostwriter Effect: When Users Do Not Perceive Ownership of AI-Generated Text But Self-Declare as Authors",
+      "link": "http://arxiv.org/abs/2303.03283v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0068",
+      "title": "Is AI Changing the Rules of Academic Misconduct? An In-depth Look at Students' Perceptions of 'AI-giarism'",
+      "link": "http://arxiv.org/abs/2306.03358v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0069",
+      "title": "\"I'm Not Confident in Debiasing AI Systems Since I Know Too Little\": Teaching AI Creators About Gender Bias Through Hands-on Tutorials",
+      "link": "http://arxiv.org/abs/2309.08121v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0070",
+      "title": "Advancing AI Audits for Enhanced AI Governance",
+      "link": "http://arxiv.org/abs/2312.00044v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0071",
+      "title": "AI Safety: Necessary, but insufficient and possibly problematic",
+      "link": "http://arxiv.org/abs/2403.17419v1",
+      "year": 2024,
+      "bm25_rank": 3,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0072",
+      "title": "AuditMAI: Towards An Infrastructure for Continuous AI Auditing",
+      "link": "http://arxiv.org/abs/2406.14243v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0073",
+      "title": "Need of AI in Modern Education: in the Eyes of Explainable AI (xAI)",
+      "link": "http://arxiv.org/abs/2408.00025v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0074",
+      "title": "AI as Extraherics: Fostering Higher-order Thinking Skills in Human-AI Interaction",
+      "link": "http://arxiv.org/abs/2409.09218v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0075",
+      "title": "Employee Well-being in the Age of AI: Perceptions, Concerns, Behaviors, and Outcomes",
+      "link": "http://arxiv.org/abs/2412.04796v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0076",
+      "title": "Position: A taxonomy for reporting and describing AI security incidents",
+      "link": "http://arxiv.org/abs/2412.14855v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0077",
+      "title": "How Developers Interact with AI: A Taxonomy of Human-AI Collaboration in Software Engineering",
+      "link": "http://arxiv.org/abs/2501.08774v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0078",
+      "title": "Human-AI Collaborative Game Testing with Vision Language Models",
+      "link": "http://arxiv.org/abs/2501.11782v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0079",
+      "title": "How Generative AI supports human in conceptual design",
+      "link": "http://arxiv.org/abs/2502.00283v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0080",
+      "title": "Statistical Scenario Modelling and Lookalike Distributions for Multi-Variate AI Risk",
+      "link": "http://arxiv.org/abs/2502.14491v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0081",
+      "title": "Three Kinds of AI Ethics",
+      "link": "http://arxiv.org/abs/2503.18842v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0082",
+      "title": "Improving User Experience with FAICO: Towards a Framework for AI Communication in Human-AI Co-Creativity",
+      "link": "http://arxiv.org/abs/2504.02526v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0083",
+      "title": "Over-Relying on Reliance: Towards Realistic Evaluations of AI-Based Clinical Decision Support",
+      "link": "http://arxiv.org/abs/2504.07423v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0084",
+      "title": "A Brief Survey of Associations Between Meta-Learning and General AI",
+      "link": "http://arxiv.org/abs/2101.04283v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0085",
+      "title": "How Mock Model Training Enhances User Perceptions of AI Systems",
+      "link": "http://arxiv.org/abs/2111.08830v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0086",
+      "title": "From the Ground Truth Up: Doing AI Ethics from Practice to Principles",
+      "link": "http://arxiv.org/abs/2201.01659v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 6
+    },
+    {
+      "paper_id": "paper-0087",
+      "title": "AI Product Security: A Primer for Developers",
+      "link": "http://arxiv.org/abs/2304.11087v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0088",
+      "title": "AI empowering research: 10 ways how science can benefit from AI",
+      "link": "http://arxiv.org/abs/2307.10265v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0089",
+      "title": "An Alternative to Regulation: The Case for Public AI",
+      "link": "http://arxiv.org/abs/2311.11350v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0090",
+      "title": "Generative AI as Economic Agents",
+      "link": "http://arxiv.org/abs/2406.00477v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0091",
+      "title": "Watching the Generative AI Hype Bubble Deflate",
+      "link": "http://arxiv.org/abs/2408.08778v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0092",
+      "title": "Establishing Minimum Elements for Effective Vulnerability Management in AI Software",
+      "link": "http://arxiv.org/abs/2411.11317v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0093",
+      "title": "A Capability Approach to AI Ethics",
+      "link": "http://arxiv.org/abs/2502.03469v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0094",
+      "title": "The Sanction of Authority: Promoting Public Trust in AI",
+      "link": "http://arxiv.org/abs/2102.04221v1",
+      "year": 2021,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0095",
+      "title": "Human-AI Collaboration for UX Evaluation: Effects of Explanation and Synchronization",
+      "link": "http://arxiv.org/abs/2112.12387v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0096",
+      "title": "Structured access: an emerging paradigm for safe AI deployment",
+      "link": "http://arxiv.org/abs/2201.05159v2",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0097",
+      "title": "A Seven-Layer Model for Standardising AI Fairness Assessment",
+      "link": "http://arxiv.org/abs/2212.11207v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0098",
+      "title": "Towards an AI Accountability Policy",
+      "link": "http://arxiv.org/abs/2307.13658v2",
+      "year": 2023,
+      "bm25_rank": null,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0099",
+      "title": "Collective Attention in Human-AI Teams",
+      "link": "http://arxiv.org/abs/2407.17489v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0100",
+      "title": "Raising AI Ethics Awareness through an AI Ethics Quiz for Software Practitioners",
+      "link": "http://arxiv.org/abs/2408.16796v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0101",
+      "title": "AI Governance in the Context of the EU AI Act: A Bibliometric and Literature Review Approach",
+      "link": "http://arxiv.org/abs/2502.03468v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0102",
+      "title": "Responsible AI Agents",
+      "link": "http://arxiv.org/abs/2502.18359v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0103",
+      "title": "Artificial Intelligence in Deliberation: The AI Penalty and the Emergence of a New Deliberative Divide",
+      "link": "http://arxiv.org/abs/2503.07690v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0104",
+      "title": "AI for Just Work: Constructing Diverse Imaginations of AI beyond \"Replacing Humans\"",
+      "link": "http://arxiv.org/abs/2503.08720v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0105",
+      "title": "Collaborating with AI Agents: Field Experiments on Teamwork, Productivity, and Performance",
+      "link": "http://arxiv.org/abs/2503.18238v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0106",
+      "title": "Who is Responsible When AI Fails? Mapping Causes, Entities, and Consequences of AI Privacy and Ethical Incidents",
+      "link": "http://arxiv.org/abs/2504.01029v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0107",
+      "title": "Three Forensic Cues for JPEG AI Images",
+      "link": "http://arxiv.org/abs/2504.03191v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0108",
+      "title": "Trustworthy AI: From Principles to Practices",
+      "link": "http://arxiv.org/abs/2110.01167v2",
+      "year": 2021,
+      "bm25_rank": null,
+      "tfidf_rank": 6
+    },
+    {
+      "paper_id": "paper-0109",
+      "title": "Towards a Roadmap on Software Engineering for Responsible AI",
+      "link": "http://arxiv.org/abs/2203.08594v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0110",
+      "title": "A Transparency Index Framework for AI in Education",
+      "link": "http://arxiv.org/abs/2206.03220v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0111",
+      "title": "AI Ethics Issues in Real World: Evidence from AI Incident Database",
+      "link": "http://arxiv.org/abs/2206.07635v2",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0112",
+      "title": "AI and Medicine",
+      "link": "http://arxiv.org/abs/2001.00641v1",
+      "year": 2019,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0113",
+      "title": "AI-Mediated Exchange Theory",
+      "link": "http://arxiv.org/abs/2003.02093v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0114",
+      "title": "Antitrust and Artificial Intelligence (AAI): Antitrust Vigilance Lifecycle and AI Legal Reasoning Autonomy",
+      "link": "http://arxiv.org/abs/2012.13016v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0115",
+      "title": "Some Critical and Ethical Perspectives on the Empirical Turn of AI Interpretability",
+      "link": "http://arxiv.org/abs/2109.09586v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0116",
+      "title": "Stakeholder Participation in AI: Beyond \"Add Diverse Stakeholders and Stir\"",
+      "link": "http://arxiv.org/abs/2111.01122v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 4
+    },
+    {
+      "paper_id": "paper-0117",
+      "title": "On Two XAI Cultures: A Case Study of Non-technical Explanations in Deployed AI System",
+      "link": "http://arxiv.org/abs/2112.01016v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0118",
+      "title": "Identifying Ethical Issues in AI Partners in Human-AI Co-Creation",
+      "link": "http://arxiv.org/abs/2204.07644v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0119",
+      "title": "Possibilities and Implications of the Multi-AI Competition",
+      "link": "http://arxiv.org/abs/2209.00509v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0120",
+      "title": "Improving Human-AI Collaboration With Descriptions of AI Behavior",
+      "link": "http://arxiv.org/abs/2301.06937v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0121",
+      "title": "How Do UX Practitioners Communicate AI as a Design Material? Artifacts, Conceptions, and Propositions",
+      "link": "http://arxiv.org/abs/2305.17389v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0122",
+      "title": "AI Audit: A Card Game to Reflect on Everyday AI Systems",
+      "link": "http://arxiv.org/abs/2305.17910v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0123",
+      "title": "Prompt Sapper: LLM-Empowered Software Engineering Infrastructure for AI-Native Services",
+      "link": "http://arxiv.org/abs/2306.02230v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0124",
+      "title": "AI Deception: A Survey of Examples, Risks, and Potential Solutions",
+      "link": "http://arxiv.org/abs/2308.14752v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0125",
+      "title": "\"AI enhances our performance, I have no doubt this one will do the same\": The Placebo effect is robust to negative descriptions of AI",
+      "link": "http://arxiv.org/abs/2309.16606v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0126",
+      "title": "Synergizing Human-AI Agency: A Guide of 23 Heuristics for Service Co-Creation with LLM-Based Agents",
+      "link": "http://arxiv.org/abs/2310.15065v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0127",
+      "title": "Towards Democratizing AI: A Comparative Analysis of AI as a Service Platforms and the Open Space for Machine Learning Approach",
+      "link": "http://arxiv.org/abs/2311.04518v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0128",
+      "title": "Towards an AI-Enhanced Cyber Threat Intelligence Processing Pipeline",
+      "link": "http://arxiv.org/abs/2403.03265v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0129",
+      "title": "AI and Identity",
+      "link": "http://arxiv.org/abs/2403.07924v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0130",
+      "title": "An AI System Evaluation Framework for Advancing AI Safety: Terminology, Taxonomy, Lifecycle Mapping",
+      "link": "http://arxiv.org/abs/2404.05388v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0131",
+      "title": "The AI-DEC: A Card-based Design Method for User-centered AI Explanations",
+      "link": "http://arxiv.org/abs/2405.16711v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0132",
+      "title": "Generative AI Enhances Team Performance and Reduces Need for Traditional Teams",
+      "link": "http://arxiv.org/abs/2405.17924v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0133",
+      "title": "Harvard Undergraduate Survey on Generative AI",
+      "link": "http://arxiv.org/abs/2406.00833v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0134",
+      "title": "Reconfiguring Participatory Design to Resist AI Realism",
+      "link": "http://arxiv.org/abs/2406.03245v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0135",
+      "title": "A Manifesto for a Pro-Actively Responsible AI in Education",
+      "link": "http://arxiv.org/abs/2407.05423v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0136",
+      "title": "Perceptions of Sentient AI and Other Digital Minds: Evidence from the AI, Morality, and Sentience (AIMS) Survey",
+      "link": "http://arxiv.org/abs/2407.08867v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0137",
+      "title": "Strategic Integration of Artificial Intelligence in the C-Suite: The Role of the Chief AI Officer",
+      "link": "http://arxiv.org/abs/2407.10247v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0138",
+      "title": "The Impacts of AI Avatar Appearance and Disclosure on User Motivation",
+      "link": "http://arxiv.org/abs/2407.21521v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0139",
+      "title": "Collaborative Human-AI Risk Annotation: Co-Annotating Online Incivility with CHAIRA",
+      "link": "http://arxiv.org/abs/2409.14223v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0140",
+      "title": "Lessons for Editors of AI Incidents from the AI Incident Database",
+      "link": "http://arxiv.org/abs/2409.16425v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0141",
+      "title": "Strategic AI Governance: Insights from Leading Nations",
+      "link": "http://arxiv.org/abs/2410.01819v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0142",
+      "title": "AI versus AI in Financial Crimes and Detection: GenAI Crime Waves to Co-Evolutionary AI",
+      "link": "http://arxiv.org/abs/2410.09066v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0143",
+      "title": "Comparing Zealous and Restrained AI Recommendations in a Real-World Human-AI Collaboration Task",
+      "link": "http://arxiv.org/abs/2410.11860v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0144",
+      "title": "Human-AI Co-Creativity: Exploring Synergies Across Levels of Creative Collaboration",
+      "link": "http://arxiv.org/abs/2411.12527v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0145",
+      "title": "AI-Empowered Human Research Integrating Brain Science and Social Sciences Insights",
+      "link": "http://arxiv.org/abs/2411.12761v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0146",
+      "title": "The Game-Theoretic Symbiosis of Trust and AI in Networked Systems",
+      "link": "http://arxiv.org/abs/2411.12859v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0147",
+      "title": "AI's assigned gender affects human-AI cooperation",
+      "link": "http://arxiv.org/abs/2412.05214v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0148",
+      "title": "As Confidence Aligns: Exploring the Effect of AI Confidence on Human Self-confidence in Human-AI Decision Making",
+      "link": "http://arxiv.org/abs/2501.12868v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0149",
+      "title": "Towards a Theory of AI Personhood",
+      "link": "http://arxiv.org/abs/2501.13533v1",
+      "year": 2025,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0150",
+      "title": "The Societal Response to Potentially Sentient AI",
+      "link": "http://arxiv.org/abs/2502.00388v2",
+      "year": 2025,
+      "bm25_rank": 2,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0151",
+      "title": "From Text to Trust: Empowering AI-assisted Decision Making with Adaptive LLM-powered Analysis",
+      "link": "http://arxiv.org/abs/2502.11919v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0152",
+      "title": "Almost AI, Almost Human: The Challenge of Detecting AI-Polished Writing",
+      "link": "http://arxiv.org/abs/2502.15666v1",
+      "year": 2025,
+      "bm25_rank": 7,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0153",
+      "title": "The Dynamics of Collective Creativity in Human-AI Social Networks",
+      "link": "http://arxiv.org/abs/2502.17962v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0154",
+      "title": "E-LENS: User Requirements-Oriented AI Ethics Assurance",
+      "link": "http://arxiv.org/abs/2503.04747v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0155",
+      "title": "Towards an AI task tensor: A taxonomy for organizing work in the age of generative AI",
+      "link": "http://arxiv.org/abs/2503.15490v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0156",
+      "title": "In Pursuit of Predictive Models of Human Preferences Toward AI Teammates",
+      "link": "http://arxiv.org/abs/2503.15516v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0157",
+      "title": "Transfeminist AI Governance",
+      "link": "http://arxiv.org/abs/2503.15682v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0158",
+      "title": "Applying HCAI in developing effective human-AI teaming: A perspective from human-AI joint cognitive systems",
+      "link": "http://arxiv.org/abs/2307.03913v5",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0159",
+      "title": "Human-like Bots for Tactical Shooters Using Compute-Efficient Sensors",
+      "link": "http://arxiv.org/abs/2501.00078v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0160",
+      "title": "Uncalibrated Models Can Improve Human-AI Collaboration",
+      "link": "http://arxiv.org/abs/2202.05983v3",
+      "year": 2022,
+      "bm25_rank": 2,
+      "tfidf_rank": 4
+    },
+    {
+      "paper_id": "paper-0161",
+      "title": "Never trust, always verify : a roadmap for Trustworthy AI?",
+      "link": "http://arxiv.org/abs/2206.11981v1",
+      "year": 2022,
+      "bm25_rank": 7,
+      "tfidf_rank": 8
+    },
+    {
+      "paper_id": "paper-0162",
+      "title": "AI in Human-computer Gaming: Techniques, Challenges and Opportunities",
+      "link": "http://arxiv.org/abs/2111.07631v2",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0163",
+      "title": "Responsible AI Pattern Catalogue: A Collection of Best Practices for AI Governance and Engineering",
+      "link": "http://arxiv.org/abs/2209.04963v4",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0164",
+      "title": "A Systematic Review of Green AI",
+      "link": "http://arxiv.org/abs/2301.11047v3",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0165",
+      "title": "AI Usage Cards: Responsibly Reporting AI-generated Content",
+      "link": "http://arxiv.org/abs/2303.03886v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0166",
+      "title": "Taking control: Policies to address extinction risks from advanced AI",
+      "link": "http://arxiv.org/abs/2310.20563v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0167",
+      "title": "Towards a Feminist Metaethics of AI",
+      "link": "http://arxiv.org/abs/2311.14700v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0168",
+      "title": "Artificial intelligence and the transformation of higher education institutions",
+      "link": "http://arxiv.org/abs/2402.08143v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0169",
+      "title": "AI-Resilient Interfaces",
+      "link": "http://arxiv.org/abs/2405.08447v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0170",
+      "title": "Don't Kill the Baby: The Case for AI in Arbitration",
+      "link": "http://arxiv.org/abs/2408.11608v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0171",
+      "title": "To Err Is AI! Debugging as an Intervention to Facilitate Appropriate Reliance on AI Systems",
+      "link": "http://arxiv.org/abs/2409.14377v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0172",
+      "title": "Interactive Example-based Explanations to Improve Health Professionals' Onboarding with AI for Human-AI Collaborative Decision Making",
+      "link": "http://arxiv.org/abs/2409.15814v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0173",
+      "title": "Shifting the Human-AI Relationship: Toward a Dynamic Relational Learning-Partner Model",
+      "link": "http://arxiv.org/abs/2410.11864v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0174",
+      "title": "How Do AI Companies \"Fine-Tune\" Policy? Examining Regulatory Capture in AI Governance",
+      "link": "http://arxiv.org/abs/2410.13042v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0175",
+      "title": "AI Work Quantization Model: Closed-System AI Computational Effort Metric",
+      "link": "http://arxiv.org/abs/2503.14515v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0176",
+      "title": "Human Indignity: From Legal AI Personhood to Selfish Memes",
+      "link": "http://arxiv.org/abs/1810.02724v1",
+      "year": 2018,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0177",
+      "title": "RCModel, a Risk Chain Model for Risk Reduction in AI Services",
+      "link": "http://arxiv.org/abs/2007.03215v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0178",
+      "title": "The State of AI Ethics Report (October 2020)",
+      "link": "http://arxiv.org/abs/2011.02787v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0179",
+      "title": "Explainability and the Fourth AI Revolution",
+      "link": "http://arxiv.org/abs/2111.06773v1",
+      "year": 2021,
+      "bm25_rank": 7,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0180",
+      "title": "Towards Goldilocks Zone in Child-centered AI",
+      "link": "http://arxiv.org/abs/2303.11221v2",
+      "year": 2023,
+      "bm25_rank": null,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0181",
+      "title": "Towards Human-AI Mutual Learning: A New Research Paradigm",
+      "link": "http://arxiv.org/abs/2405.04687v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0182",
+      "title": "Off-Switching Not Guaranteed",
+      "link": "http://arxiv.org/abs/2502.08864v1",
+      "year": 2025,
+      "bm25_rank": 2,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0183",
+      "title": "Responsible Development of Offensive AI",
+      "link": "http://arxiv.org/abs/2504.02701v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0184",
+      "title": "Strategies to architect AI Safety: Defense to guard AI from Adversaries",
+      "link": "http://arxiv.org/abs/1906.03466v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0185",
+      "title": "Neural Network Verification for the Masses (of AI graduates)",
+      "link": "http://arxiv.org/abs/1907.01297v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0186",
+      "title": "Montreal AI Ethics Institute's (MAIEI) Submission to the World Intellectual Property Organization (WIPO) Conversation on Intellectual Property (IP) and Artificial Intelligence (AI) Second Session",
+      "link": "http://arxiv.org/abs/2008.04520v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0187",
+      "title": "The AI Triplet: Computational, Conceptual, and Mathematical Knowledge in AI Education",
+      "link": "http://arxiv.org/abs/2110.09290v2",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0188",
+      "title": "AI for CSI Feedback Enhancement in 5G-Advanced",
+      "link": "http://arxiv.org/abs/2206.15132v2",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0189",
+      "title": "Understanding Older Adults' Perceptions and Challenges in Using AI-enabled Everyday Technologies",
+      "link": "http://arxiv.org/abs/2210.01369v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0190",
+      "title": "Exploring AI Futures Through Role Play",
+      "link": "http://arxiv.org/abs/1912.08964v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0191",
+      "title": "Does the Whole Exceed its Parts? The Effect of AI Explanations on Complementary Team Performance",
+      "link": "http://arxiv.org/abs/2006.14779v3",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0192",
+      "title": "Measuring Human Adaptation to AI in Decision Making: Application to Evaluate Changes after AlphaGo",
+      "link": "http://arxiv.org/abs/2012.15035v3",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0193",
+      "title": "\"Brilliant AI Doctor\" in Rural China: Tensions and Challenges in AI-Powered CDSS Deployment",
+      "link": "http://arxiv.org/abs/2101.01524v2",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0194",
+      "title": "Understanding and Creating Art with AI: Review and Outlook",
+      "link": "http://arxiv.org/abs/2102.09109v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0195",
+      "title": "Do Humans Trust Advice More if it Comes from AI? An Analysis of Human-AI Interactions",
+      "link": "http://arxiv.org/abs/2107.07015v2",
+      "year": 2021,
+      "bm25_rank": 2,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0196",
+      "title": "AI in Finance: Challenges, Techniques and Opportunities",
+      "link": "http://arxiv.org/abs/2107.09051v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0197",
+      "title": "The Human Factor in AI Safety",
+      "link": "http://arxiv.org/abs/2201.04263v1",
+      "year": 2022,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0198",
+      "title": "The Value of Measuring Trust in AI - A Socio-Technical System Perspective",
+      "link": "http://arxiv.org/abs/2204.13480v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0199",
+      "title": "AI Maintenance: A Robustness Perspective",
+      "link": "http://arxiv.org/abs/2301.03052v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0200",
+      "title": "Who Should I Trust: AI or Myself? Leveraging Human and AI Correctness Likelihood to Promote Appropriate Trust in AI-Assisted Decision-Making",
+      "link": "http://arxiv.org/abs/2301.05809v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0201",
+      "title": "Competent but Rigid: Identifying the Gap in Empowering AI to Participate Equally in Group Decision-Making",
+      "link": "http://arxiv.org/abs/2302.08807v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0202",
+      "title": "Democratising AI: Multiple Meanings, Goals, and Methods",
+      "link": "http://arxiv.org/abs/2303.12642v3",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0203",
+      "title": "Scalable, Distributed AI Frameworks: Leveraging Cloud Computing for Enhanced Deep Learning Performance and Efficiency",
+      "link": "http://arxiv.org/abs/2304.13738v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0204",
+      "title": "Disentangling and Operationalizing AI Fairness at LinkedIn",
+      "link": "http://arxiv.org/abs/2306.00025v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0205",
+      "title": "Responsible Design Patterns for Machine Learning Pipelines",
+      "link": "http://arxiv.org/abs/2306.01788v3",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0206",
+      "title": "The Chai Platform's AI Safety Framework",
+      "link": "http://arxiv.org/abs/2306.02979v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0207",
+      "title": "Diversity is Strength: Mastering Football Full Game with Interactive Reinforcement Learning of Multiple AIs",
+      "link": "http://arxiv.org/abs/2306.15903v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0208",
+      "title": "VerifAI: Verified Generative AI",
+      "link": "http://arxiv.org/abs/2307.02796v2",
+      "year": 2023,
+      "bm25_rank": 5,
+      "tfidf_rank": 5
+    },
+    {
+      "paper_id": "paper-0209",
+      "title": "Finnish 5th and 6th graders' misconceptions about Artificial Intelligence",
+      "link": "http://arxiv.org/abs/2311.16644v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0210",
+      "title": "Human AI Collaboration in Software Engineering: Lessons Learned from a Hands On Workshop",
+      "link": "http://arxiv.org/abs/2312.10620v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0211",
+      "title": "Does More Advice Help? The Effects of Second Opinions in AI-Assisted Decision Making",
+      "link": "http://arxiv.org/abs/2401.07058v1",
+      "year": 2024,
+      "bm25_rank": 3,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0212",
+      "title": "Implications of Regulations on the Use of AI and Generative AI for Human-Centered Responsible Artificial Intelligence",
+      "link": "http://arxiv.org/abs/2403.00148v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0213",
+      "title": "Beyond Recommender: An Exploratory Study of the Effects of Different AI Roles in AI-Assisted Decision Making",
+      "link": "http://arxiv.org/abs/2403.01791v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0214",
+      "title": "Silico-centric Theory of Mind",
+      "link": "http://arxiv.org/abs/2403.09289v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0215",
+      "title": "Designing Human-AI Systems: Anthropomorphism and Framing Bias on Human-AI Collaboration",
+      "link": "http://arxiv.org/abs/2404.00634v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0216",
+      "title": "AI Robots and Humanoid AI: Review, Perspectives and Directions",
+      "link": "http://arxiv.org/abs/2405.15775v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0217",
+      "title": "Oil & Water? Diffusion of AI Within and Across Scientific Fields",
+      "link": "http://arxiv.org/abs/2405.15828v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0218",
+      "title": "What do AI/ML practitioners think about AI/ML bias?",
+      "link": "http://arxiv.org/abs/2407.08895v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0219",
+      "title": "ExploreGen: Large Language Models for Envisioning the Uses and Risks of AI Technologies",
+      "link": "http://arxiv.org/abs/2407.12454v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0220",
+      "title": "Reducing Barriers to the Use of Marginalised Music Genres in AI",
+      "link": "http://arxiv.org/abs/2407.13439v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0221",
+      "title": "Ensuring Fairness with Transparent Auditing of Quantitative Bias in AI Systems",
+      "link": "http://arxiv.org/abs/2409.06708v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0222",
+      "title": "Synthetic Human Memories: AI-Edited Images and Videos Can Implant False Memories and Distort Recollection",
+      "link": "http://arxiv.org/abs/2409.08895v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0223",
+      "title": "\"It Might be Technically Impressive, But It's Practically Useless to us\": Motivations, Practices, Challenges, and Opportunities for Cross-Functional Collaboration around AI within the News Industry",
+      "link": "http://arxiv.org/abs/2409.12000v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0224",
+      "title": "Enhancing transparency in AI-powered customer engagement",
+      "link": "http://arxiv.org/abs/2410.01809v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0225",
+      "title": "How Performance Pressure Influences AI-Assisted Decision Making",
+      "link": "http://arxiv.org/abs/2410.16560v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0226",
+      "title": "Utilizing Human Behavior Modeling to Manipulate Explanations in AI-Assisted Decision Making: The Good, the Bad, and the Scary",
+      "link": "http://arxiv.org/abs/2411.10461v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0227",
+      "title": "The Role of AI in Financial Forecasting: ChatGPT's Potential and Challenges",
+      "link": "http://arxiv.org/abs/2411.13562v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0228",
+      "title": "AI in the Cosmos",
+      "link": "http://arxiv.org/abs/2412.10093v1",
+      "year": 2024,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0229",
+      "title": "The Value of AI Advice: Personalized and Value-Maximizing AI Advisors Are Necessary to Reliably Benefit Experts and Organizations",
+      "link": "http://arxiv.org/abs/2412.19530v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0230",
+      "title": "The Human-AI Handshake Framework: A Bidirectional Approach to Human-AI Collaboration",
+      "link": "http://arxiv.org/abs/2502.01493v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0231",
+      "title": "Enabling External Scrutiny of AI Systems with Privacy-Enhancing Technologies",
+      "link": "http://arxiv.org/abs/2502.05219v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0232",
+      "title": "AI Safety for Everyone",
+      "link": "http://arxiv.org/abs/2502.09288v2",
+      "year": 2025,
+      "bm25_rank": 4,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0233",
+      "title": "Augmenting Coaching with GenAI: Insights into Use, Effectiveness, and Future Potential",
+      "link": "http://arxiv.org/abs/2502.14632v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0234",
+      "title": "I am not thinking anymore, just following the path.: Investigating Task Delegation Trend of Author-AI Co-Creation with Generative AIs",
+      "link": "http://arxiv.org/abs/2502.16740v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0235",
+      "title": "An Exploratory Study on How AI Awareness Impacts Human-AI Design Collaboration",
+      "link": "http://arxiv.org/abs/2502.16833v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0236",
+      "title": "Investigating Youth AI Auditing",
+      "link": "http://arxiv.org/abs/2502.18576v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0237",
+      "title": "Climate And Resource Awareness is Imperative to Achieving Sustainable AI (and Preventing a Global AI Arms Race)",
+      "link": "http://arxiv.org/abs/2502.20016v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0238",
+      "title": "Copyright in AI-generated works: Lessons from recent developments in patent law",
+      "link": "http://arxiv.org/abs/2503.04738v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0239",
+      "title": "Controllable Complementarity: Subjective Preferences in Human-AI Collaboration",
+      "link": "http://arxiv.org/abs/2503.05455v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0240",
+      "title": "Actionable AI: Enabling Non Experts to Understand and Configure AI Systems",
+      "link": "http://arxiv.org/abs/2503.06803v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0241",
+      "title": "Automatic Curriculum Design for Zero-Shot Human-AI Coordination",
+      "link": "http://arxiv.org/abs/2503.07275v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0242",
+      "title": "Runtime Detection of Adversarial Attacks in AI Accelerators Using Performance Counters",
+      "link": "http://arxiv.org/abs/2503.07568v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0243",
+      "title": "Augmenting Teamwork through AI Agents as Spatial Collaborators",
+      "link": "http://arxiv.org/abs/2503.09794v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0244",
+      "title": "Do Comments and Expertise Still Matter? An Experiment on Programmers' Adoption of AI-Generated JavaScript Code",
+      "link": "http://arxiv.org/abs/2503.11453v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0245",
+      "title": "AI Identity, Empowerment, and Mindfulness in Mitigating Unethical AI Use",
+      "link": "http://arxiv.org/abs/2503.20099v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0246",
+      "title": "ChatBench: From Static Benchmarks to Human-AI Evaluation",
+      "link": "http://arxiv.org/abs/2504.07114v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0247",
+      "title": "Low Impact Artificial Intelligences",
+      "link": "http://arxiv.org/abs/1705.10720v1",
+      "year": 2017,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0248",
+      "title": "The tension between openness and prudence in AI research",
+      "link": "http://arxiv.org/abs/1910.01170v2",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0249",
+      "title": "Trustworthy AI",
+      "link": "http://arxiv.org/abs/2002.06276v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 5
+    },
+    {
+      "paper_id": "paper-0250",
+      "title": "The 6-Ds of Creating AI-Enabled Systems",
+      "link": "http://arxiv.org/abs/2202.03172v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0251",
+      "title": "Can Artificial Intelligence Transform DevOps?",
+      "link": "http://arxiv.org/abs/2206.00225v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0252",
+      "title": "Framework for disruptive AI/ML Innovation",
+      "link": "http://arxiv.org/abs/2204.12641v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0253",
+      "title": "Is Decentralized AI Safer?",
+      "link": "http://arxiv.org/abs/2211.05828v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0254",
+      "title": "Mapping the Design Space of Interactions in Human-AI Text Co-creation Tasks",
+      "link": "http://arxiv.org/abs/2303.06430v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0255",
+      "title": "Combating the \"Sameness\" in AI Art: Reflections on the Interactive AI Installation Fencing Hallucination",
+      "link": "http://arxiv.org/abs/2311.17080v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0256",
+      "title": "Concrete Problems in AI Safety, Revisited",
+      "link": "http://arxiv.org/abs/2401.10899v1",
+      "year": 2023,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0257",
+      "title": "The Global Impact of AI-Artificial Intelligence: Recent Advances and Future Directions, A Review",
+      "link": "http://arxiv.org/abs/2401.12223v1",
+      "year": 2023,
+      "bm25_rank": 5,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0258",
+      "title": "When Should Algorithms Resign? A Proposal for AI Governance",
+      "link": "http://arxiv.org/abs/2402.18326v2",
+      "year": 2024,
+      "bm25_rank": 8,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0259",
+      "title": "A Survey of AI Reliance",
+      "link": "http://arxiv.org/abs/2408.03948v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0260",
+      "title": "Towards a Generative AI Design Dialogue",
+      "link": "http://arxiv.org/abs/2409.01283v1",
+      "year": 2024,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0261",
+      "title": "Generative AI Carries Non-Democratic Biases and Stereotypes: Representation of Women, Black Individuals, Age Groups, and People with Disability in AI-Generated Images across Occupations",
+      "link": "http://arxiv.org/abs/2409.13869v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0262",
+      "title": "Artificial Intelligence Policy Framework for Institutions",
+      "link": "http://arxiv.org/abs/2412.02834v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0263",
+      "title": "Harnessing AI in Secondary Education to Enhance Writing Competence",
+      "link": "http://arxiv.org/abs/2412.12117v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0264",
+      "title": "The Role of Task Complexity in Reducing AI Plagiarism: A Study of Generative AI Tools",
+      "link": "http://arxiv.org/abs/2412.13412v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0265",
+      "title": "DAMAGE: Detecting Adversarially Modified AI Generated Text",
+      "link": "http://arxiv.org/abs/2501.03437v1",
+      "year": 2025,
+      "bm25_rank": 4,
+      "tfidf_rank": 4
+    },
+    {
+      "paper_id": "paper-0266",
+      "title": "What's So Human about Human-AI Collaboration, Anyway? Generative AI and Human-Computer Interaction",
+      "link": "http://arxiv.org/abs/2503.05926v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0267",
+      "title": "State of AI Ethics Report (Volume 6, February 2022)",
+      "link": "http://arxiv.org/abs/2202.07435v1",
+      "year": 2022,
+      "bm25_rank": 2,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0268",
+      "title": "Effect of Confidence and Explanation on Accuracy and Trust Calibration in AI-Assisted Decision Making",
+      "link": "http://arxiv.org/abs/2001.02114v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0269",
+      "title": "Is the Most Accurate AI the Best Teammate? Optimizing AI for Teamwork",
+      "link": "http://arxiv.org/abs/2004.13102v3",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0270",
+      "title": "Transitioning to human interaction with AI systems: New challenges and opportunities for HCI professionals to enable human-centered AI",
+      "link": "http://arxiv.org/abs/2105.05424v4",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0271",
+      "title": "Trustworthy AI: A Computational Perspective",
+      "link": "http://arxiv.org/abs/2107.06641v3",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0272",
+      "title": "Toward Among-Device AI from On-Device AI with Stream Pipelines",
+      "link": "http://arxiv.org/abs/2201.06026v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0273",
+      "title": "Intent-aligned AI systems deplete human agency: the need for agency foundations research in AI safety",
+      "link": "http://arxiv.org/abs/2305.19223v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0274",
+      "title": "What drives the acceptance of AI technology?: the role of expectations and experiences",
+      "link": "http://arxiv.org/abs/2306.13670v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0275",
+      "title": "The AI Incident Database as an Educational Tool to Raise Awareness of AI Harms: A Classroom Exploration of Efficacy, Limitations, & Future Improvements",
+      "link": "http://arxiv.org/abs/2310.06269v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0276",
+      "title": "How VADER is your AI? Towards a definition of artificial intelligence systems appropriate for regulation",
+      "link": "http://arxiv.org/abs/2402.05048v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0277",
+      "title": "The AI Security Pyramid of Pain",
+      "link": "http://arxiv.org/abs/2402.11082v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0278",
+      "title": "The European Commitment to Human-Centered Technology: The Integral Role of HCI in the EU AI Act's Success",
+      "link": "http://arxiv.org/abs/2402.14728v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0279",
+      "title": "Generative AI and Copyright: A Dynamic Perspective",
+      "link": "http://arxiv.org/abs/2402.17801v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0280",
+      "title": "Antisocial Analagous Behavior, Alignment and Human Impact of Google AI Systems: Evaluating through the lens of modified Antisocial Behavior Criteria by Human Interaction, Independent LLM Analysis, and AI Self-Reflection",
+      "link": "http://arxiv.org/abs/2403.15479v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0281",
+      "title": "Towards Human-AI Deliberation: Design and Evaluation of LLM-Empowered Deliberative AI for AI-Assisted Decision-Making",
+      "link": "http://arxiv.org/abs/2403.16812v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0282",
+      "title": "The Switch, the Ladder, and the Matrix: Models for Classifying AI Systems",
+      "link": "http://arxiv.org/abs/2407.05341v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0283",
+      "title": "AI for All: Identifying AI incidents Related to Diversity and Inclusion",
+      "link": "http://arxiv.org/abs/2408.01438v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0284",
+      "title": "AI Consciousness and Public Perceptions: Four Futures",
+      "link": "http://arxiv.org/abs/2408.04771v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0285",
+      "title": "Deceptive uses of Artificial Intelligence in elections strengthen support for AI ban",
+      "link": "http://arxiv.org/abs/2408.12613v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0286",
+      "title": "Willingness to Read AI-Generated News Is Not Driven by Their Perceived Quality",
+      "link": "http://arxiv.org/abs/2409.03500v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0287",
+      "title": "Taking AI Welfare Seriously",
+      "link": "http://arxiv.org/abs/2411.00986v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0288",
+      "title": "Lessons From an App Update at Replika AI: Identity Discontinuity in Human-AI Relationships",
+      "link": "http://arxiv.org/abs/2412.14190v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0289",
+      "title": "The Value of AI-Generated Metadata for UGC Platforms: Evidence from a Large-scale Field Experiment",
+      "link": "http://arxiv.org/abs/2412.18337v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0290",
+      "title": "Exploring the sustainable scaling of AI dilemma: A projective study of corporations' AI environmental impacts",
+      "link": "http://arxiv.org/abs/2501.14334v2",
+      "year": 2025,
+      "bm25_rank": 3,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0291",
+      "title": "Measuring Political Preferences in AI Systems: An Integrative Approach",
+      "link": "http://arxiv.org/abs/2503.10649v1",
+      "year": 2025,
+      "bm25_rank": 2,
+      "tfidf_rank": 4
+    },
+    {
+      "paper_id": "paper-0292",
+      "title": "The Status Quo and Future of AI-TPACK for Mathematics Teacher Education Students: A Case Study in Chinese Universities",
+      "link": "http://arxiv.org/abs/2503.13533v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0293",
+      "title": "The Pace of Artificial Intelligence Innovations: Speed, Talent, and Trial-and-Error",
+      "link": "http://arxiv.org/abs/2009.01812v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0294",
+      "title": "An Empirical Study of AI Techniques in Mobile Applications",
+      "link": "http://arxiv.org/abs/2212.01635v3",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0295",
+      "title": "Explainable AI Enhances Glaucoma Referrals, Yet the Human-AI Team Still Falls Short of the AI Alone",
+      "link": "http://arxiv.org/abs/2407.11974v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0296",
+      "title": "Can Domain Experts Rely on AI Appropriately? A Case Study on AI-Assisted Prostate Cancer MRI Diagnosis",
+      "link": "http://arxiv.org/abs/2502.03482v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0297",
+      "title": "Actionable Guidance for High-Consequence AI Risk Management: Towards Standards Addressing AI Catastrophic Risks",
+      "link": "http://arxiv.org/abs/2206.08966v3",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0298",
+      "title": "Who Goes First? Influences of Human-AI Workflow on Decision Making in Clinical Imaging",
+      "link": "http://arxiv.org/abs/2205.09696v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0299",
+      "title": "Should ChatGPT and Bard Share Revenue with Their Data Providers? A New Business Model for the AI Era",
+      "link": "http://arxiv.org/abs/2305.02555v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0300",
+      "title": "AI for non-programmers: Applied AI in the lectures for students without programming skills",
+      "link": "http://arxiv.org/abs/2403.05547v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0301",
+      "title": "The Interplay of Learning, Analytics, and Artificial Intelligence in Education: A Vision for Hybrid Intelligence",
+      "link": "http://arxiv.org/abs/2403.16081v4",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0302",
+      "title": "Overview of AI and Communication for 6G Network: Fundamentals, Challenges, and Future Research Opportunities",
+      "link": "http://arxiv.org/abs/2412.14538v4",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0303",
+      "title": "Modeling Progress in AI",
+      "link": "http://arxiv.org/abs/1512.05849v1",
+      "year": 2015,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0304",
+      "title": "Perspectives for Evaluating Conversational AI",
+      "link": "http://arxiv.org/abs/1709.04734v1",
+      "year": 2017,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0305",
+      "title": "Distinguished Capabilities of Artificial Intelligence Wireless Communication Systems",
+      "link": "http://arxiv.org/abs/1809.05673v1",
+      "year": 2018,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0306",
+      "title": "A Case for Backward Compatibility for Human-AI Teams",
+      "link": "http://arxiv.org/abs/1906.01148v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0307",
+      "title": "Federated AI lets a team imagine together: Federated Learning of GANs",
+      "link": "http://arxiv.org/abs/1906.03595v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0308",
+      "title": "Challenges of Human-Aware AI Systems",
+      "link": "http://arxiv.org/abs/1910.07089v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0309",
+      "title": "AI Ethics for Systemic Issues: A Structural Approach",
+      "link": "http://arxiv.org/abs/1911.03216v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0310",
+      "title": "Speciesist bias in AI -- How AI applications perpetuate discrimination and unfair outcomes against animals",
+      "link": "http://arxiv.org/abs/2202.10848v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0311",
+      "title": "AI-HRI Brings New Dimensions to Human-Aware Design for Human-Aware AI",
+      "link": "http://arxiv.org/abs/2210.11832v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0312",
+      "title": "Ten AI Stepping Stones for Cybersecurity",
+      "link": "http://arxiv.org/abs/1912.06817v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0313",
+      "title": "AAAI FSS-19: Human-Centered AI: Trustworthiness of AI Models and Data Proceedings",
+      "link": "http://arxiv.org/abs/2001.05375v1",
+      "year": 2020,
+      "bm25_rank": 6,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0314",
+      "title": "Could regulating the creators deliver trustworthy AI?",
+      "link": "http://arxiv.org/abs/2006.14750v1",
+      "year": 2020,
+      "bm25_rank": 8,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0315",
+      "title": "Time for AI (Ethics) Maturity Model Is Now",
+      "link": "http://arxiv.org/abs/2101.12701v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0316",
+      "title": "The corruptive force of AI-generated advice",
+      "link": "http://arxiv.org/abs/2102.07536v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0317",
+      "title": "HPC AI500: Representative, Repeatable and Simple HPC AI Benchmarking",
+      "link": "http://arxiv.org/abs/2102.12848v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0318",
+      "title": "Systematic Mapping Study on the Machine Learning Lifecycle",
+      "link": "http://arxiv.org/abs/2103.10248v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0319",
+      "title": "An interdisciplinary conceptual study of Artificial Intelligence (AI) for helping benefit-risk assessment practices: Towards a comprehensive qualification matrix of AI programs and devices (pre-print 2020)",
+      "link": "http://arxiv.org/abs/2105.03192v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0320",
+      "title": "AI-Native Network Slicing for 6G Networks",
+      "link": "http://arxiv.org/abs/2105.08576v2",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0321",
+      "title": "Explainable AI for medical imaging: Explaining pneumothorax diagnoses with Bayesian Teaching",
+      "link": "http://arxiv.org/abs/2106.04684v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0322",
+      "title": "Measuring Ethics in AI with AI: A Methodology and Dataset Construction",
+      "link": "http://arxiv.org/abs/2107.11913v2",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0323",
+      "title": "AI Federalism: Shaping AI Policy within States in Germany",
+      "link": "http://arxiv.org/abs/2111.04454v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0324",
+      "title": "Governance of Ethical and Trustworthy AI Systems: Research Gaps in the ECCOLA Method",
+      "link": "http://arxiv.org/abs/2111.06207v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0325",
+      "title": "Problem examination for AI methods in product design",
+      "link": "http://arxiv.org/abs/2201.07642v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0326",
+      "title": "On the Effect of Information Asymmetry in Human-AI Teams",
+      "link": "http://arxiv.org/abs/2205.01467v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0327",
+      "title": "What does it mean to be a responsible AI practitioner: An ontology of roles and skills",
+      "link": "http://arxiv.org/abs/2205.03946v2",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0328",
+      "title": "Landing AI on Networks: An equipment vendor viewpoint on Autonomous Driving Networks",
+      "link": "http://arxiv.org/abs/2205.08347v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0329",
+      "title": "An Analytics of Culture: Modeling Subjectivity, Scalability, Contextuality, and Temporality",
+      "link": "http://arxiv.org/abs/2211.07460v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0330",
+      "title": "Inherent Limitations of AI Fairness",
+      "link": "http://arxiv.org/abs/2212.06495v2",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0331",
+      "title": "Developing Responsible Chatbots for Financial Services: A Pattern-Oriented Responsible AI Engineering Approach",
+      "link": "http://arxiv.org/abs/2301.05517v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0332",
+      "title": "Towards Healthy AI: Large Language Models Need Therapists Too",
+      "link": "http://arxiv.org/abs/2304.00416v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0333",
+      "title": "On the Perception of Difficulty: Differences between Humans and AI",
+      "link": "http://arxiv.org/abs/2304.09803v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0334",
+      "title": "AI Design, Design AI, Human-Centred AI and the Theatre of the Absurd the language, life and times of a UX designer",
+      "link": "http://arxiv.org/abs/2304.10878v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0335",
+      "title": "Positive AI: Key Challenges in Designing Artificial Intelligence for Wellbeing",
+      "link": "http://arxiv.org/abs/2304.12241v4",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0336",
+      "title": "QB4AIRA: A Question Bank for AI Risk Assessment",
+      "link": "http://arxiv.org/abs/2305.09300v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0337",
+      "title": "Constructing Dreams using Generative AI",
+      "link": "http://arxiv.org/abs/2305.12013v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0338",
+      "title": "Towards Real Smart Apps: Investigating Human-AI Interactions in Smartphone On-Device AI Apps",
+      "link": "http://arxiv.org/abs/2307.00756v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0339",
+      "title": "Integrative AI-Driven Strategies for Advancing Precision Medicine in Infectious Diseases and Beyond: A Novel Multidisciplinary Approach",
+      "link": "http://arxiv.org/abs/2307.15228v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0340",
+      "title": "The Ethics of AI Value Chains",
+      "link": "http://arxiv.org/abs/2307.16787v3",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0341",
+      "title": "AI and the EU Digital Markets Act: Addressing the Risks of Bigness in Generative AI",
+      "link": "http://arxiv.org/abs/2308.02033v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0342",
+      "title": "Who to Trust, How and Why: Untangling AI Ethics Principles, Trustworthiness and Trust",
+      "link": "http://arxiv.org/abs/2309.10318v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0343",
+      "title": "AI/ML for Beam Management in 5G-Advanced: A Standardization Perspective",
+      "link": "http://arxiv.org/abs/2309.10575v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0344",
+      "title": "Towards Effective Human-AI Decision-Making: The Role of Human Learning in Appropriate Reliance on AI Advice",
+      "link": "http://arxiv.org/abs/2310.02108v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0345",
+      "title": "Deepfakes, Phrenology, Surveillance, and More! A Taxonomy of AI Privacy Risks",
+      "link": "http://arxiv.org/abs/2310.07879v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0346",
+      "title": "Techniques for supercharging academic writing with generative AI",
+      "link": "http://arxiv.org/abs/2310.17143v3",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0347",
+      "title": "Synergy: Towards On-Body AI via Tiny AI Accelerator Collaboration on Wearables",
+      "link": "http://arxiv.org/abs/2401.08637v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0348",
+      "title": "Empowering Africa: An In-depth Exploration of the Adoption of Artificial Intelligence Across the Continent",
+      "link": "http://arxiv.org/abs/2401.09457v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0349",
+      "title": "Trustworthy Distributed AI Systems: Robustness, Privacy, and Governance",
+      "link": "http://arxiv.org/abs/2402.01096v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0350",
+      "title": "What About the Data? A Mapping Study on Data Engineering for AI Systems",
+      "link": "http://arxiv.org/abs/2402.05156v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0351",
+      "title": "Antagonistic AI",
+      "link": "http://arxiv.org/abs/2402.07350v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0352",
+      "title": "AI Literacy in Low-Resource Languages:Insights from creating AI in Yoruba videos",
+      "link": "http://arxiv.org/abs/2403.04799v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0353",
+      "title": "AI-enhanced Collective Intelligence",
+      "link": "http://arxiv.org/abs/2403.10433v4",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0354",
+      "title": "The Value, Benefits, and Concerns of Generative AI-Powered Assistance in Writing",
+      "link": "http://arxiv.org/abs/2403.12004v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0355",
+      "title": "AI Ethics: A Bibliometric Analysis, Critical Issues, and Key Gaps",
+      "link": "http://arxiv.org/abs/2403.14681v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0356",
+      "title": "Navigating the EU AI Act: A Methodological Approach to Compliance for Safety-critical Products",
+      "link": "http://arxiv.org/abs/2403.16808v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0357",
+      "title": "Rethinking Software Engineering in the Foundation Model Era: From Task-Driven AI Copilots to Goal-Driven AI Pair Programmers",
+      "link": "http://arxiv.org/abs/2404.10225v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0358",
+      "title": "Augmenting the Author: Exploring the Potential of AI Collaboration in Academic Writing",
+      "link": "http://arxiv.org/abs/2404.16071v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0359",
+      "title": "AfricAIED 2024: 2nd Workshop on Artificial Intelligence in Education in Africa",
+      "link": "http://arxiv.org/abs/2405.00139v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0360",
+      "title": "Beyond Prompts: Learning from Human Communication for Enhanced AI Intent Alignment",
+      "link": "http://arxiv.org/abs/2405.05678v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0361",
+      "title": "When combinations of humans and AI are useful: A systematic review and meta-analysis",
+      "link": "http://arxiv.org/abs/2405.06087v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0362",
+      "title": "Human-AI Safety: A Descendant of Generative AI and Control Systems Safety",
+      "link": "http://arxiv.org/abs/2405.09794v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0363",
+      "title": "Societal Adaptation to Advanced AI",
+      "link": "http://arxiv.org/abs/2405.10295v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0364",
+      "title": "The AI Alignment Paradox",
+      "link": "http://arxiv.org/abs/2405.20806v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0365",
+      "title": "Generative AI Needs Adaptive Governance",
+      "link": "http://arxiv.org/abs/2406.04554v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0366",
+      "title": "Human Learning about AI",
+      "link": "http://arxiv.org/abs/2406.05408v2",
+      "year": 2024,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0367",
+      "title": "Global AI Governance in Healthcare: A Cross-Jurisdictional Regulatory Analysis",
+      "link": "http://arxiv.org/abs/2406.08695v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0368",
+      "title": "The Ethics of AI in Education",
+      "link": "http://arxiv.org/abs/2406.11842v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0369",
+      "title": "Collaborative Design of AI-Enhanced Learning Activities",
+      "link": "http://arxiv.org/abs/2407.06660v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0370",
+      "title": "\"It depends\": Configuring AI to Improve Clinical Usefulness Across Contexts",
+      "link": "http://arxiv.org/abs/2407.11978v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0371",
+      "title": "A Nested Model for AI Design and Validation",
+      "link": "http://arxiv.org/abs/2407.16888v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0372",
+      "title": "Towards the Terminator Economy: Assessing Job Exposure to AI through LLMs",
+      "link": "http://arxiv.org/abs/2407.19204v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0373",
+      "title": "Misfitting With AI: How Blind People Verify and Contest AI Errors",
+      "link": "http://arxiv.org/abs/2408.06546v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0374",
+      "title": "Adapting cybersecurity frameworks to manage frontier AI risks: A defense-in-depth approach",
+      "link": "http://arxiv.org/abs/2408.07933v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0375",
+      "title": "The Turing Valley: How AI Capabilities Shape Labor Income",
+      "link": "http://arxiv.org/abs/2408.16443v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0376",
+      "title": "AI Governance in Higher Education: Case Studies of Guidance at Big Ten Universities",
+      "link": "http://arxiv.org/abs/2409.02017v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0377",
+      "title": "Human Bias in the Face of AI: The Role of Human Judgement in AI Generated Text Evaluation",
+      "link": "http://arxiv.org/abs/2410.03723v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0378",
+      "title": "AI Model Registries: A Foundational Tool for AI Governance",
+      "link": "http://arxiv.org/abs/2410.09645v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0379",
+      "title": "Ethical Leadership in the Age of AI Challenges, Opportunities and Framework for Ethical Leadership",
+      "link": "http://arxiv.org/abs/2410.18095v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0380",
+      "title": "The Dark Side of AI Companionship: A Taxonomy of Harmful Algorithmic Behaviors in Human-AI Relationships",
+      "link": "http://arxiv.org/abs/2410.20130v3",
+      "year": 2024,
+      "bm25_rank": 6,
+      "tfidf_rank": 7
+    },
+    {
+      "paper_id": "paper-0381",
+      "title": "Where Assessment Validation and Responsible AI Meet",
+      "link": "http://arxiv.org/abs/2411.02577v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0382",
+      "title": "From Pen to Prompt: How Creative Writers Integrate AI into their Writing Practice",
+      "link": "http://arxiv.org/abs/2411.03137v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0383",
+      "title": "Unexploited Information Value in Human-AI Collaboration",
+      "link": "http://arxiv.org/abs/2411.10463v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0384",
+      "title": "AI Benchmarks and Datasets for LLM Evaluation",
+      "link": "http://arxiv.org/abs/2412.01020v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 4
+    },
+    {
+      "paper_id": "paper-0385",
+      "title": "Augmenting Minds or Automating Skills: The Differential Role of Human Capital in Generative AI's Impact on Creative Tasks",
+      "link": "http://arxiv.org/abs/2412.03963v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0386",
+      "title": "From Principles to Practice: A Deep Dive into AI Ethics and Regulations",
+      "link": "http://arxiv.org/abs/2412.04683v2",
+      "year": 2024,
+      "bm25_rank": 10,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0387",
+      "title": "Interactions Between Artificial Intelligence and Digital Public Infrastructure: Concepts, Benefits, and Challenges",
+      "link": "http://arxiv.org/abs/2412.05761v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0388",
+      "title": "Bridging AI and Science: Implications from a Large-Scale Literature Analysis of AI4Science",
+      "link": "http://arxiv.org/abs/2412.09628v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0389",
+      "title": "The Impact of AI Assistance on Radiology Reporting: A Pilot Study Using Simulated AI Draft Reports",
+      "link": "http://arxiv.org/abs/2412.12042v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0390",
+      "title": "Everyday AR through AI-in-the-Loop",
+      "link": "http://arxiv.org/abs/2412.12681v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0391",
+      "title": "Advancing Trustworthy AI for Sustainable Development: Recommendations for Standardising AI Incident Reporting",
+      "link": "http://arxiv.org/abs/2501.14778v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0392",
+      "title": "Why human-AI relationships need socioaffective alignment",
+      "link": "http://arxiv.org/abs/2502.02528v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0393",
+      "title": "Practical Application and Limitations of AI Certification Catalogues in the Light of the AI Act",
+      "link": "http://arxiv.org/abs/2502.10398v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0394",
+      "title": "Understanding Screenwriters' Practices, Attitudes, and Future Expectations in Human-AI Co-Creation",
+      "link": "http://arxiv.org/abs/2502.16153v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0395",
+      "title": "AI Literacy in K-12 and Higher Education in the Wake of Generative AI: An Integrative Review",
+      "link": "http://arxiv.org/abs/2503.00079v3",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0396",
+      "title": "Reflection on Data Storytelling Tools in the Generative AI Era from the Human-AI Collaboration Perspective",
+      "link": "http://arxiv.org/abs/2503.02631v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0397",
+      "title": "GATE: An Integrated Assessment Model for AI Automation",
+      "link": "http://arxiv.org/abs/2503.04941v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0398",
+      "title": "Compliance of AI Systems",
+      "link": "http://arxiv.org/abs/2503.05571v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0399",
+      "title": "Unlocking the Potential of AI Researchers in Scientific Discovery: What Is Missing?",
+      "link": "http://arxiv.org/abs/2503.05822v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0400",
+      "title": "How Problematic Writer-AI Interactions (Rather than Problematic AI) Hinder Writers' Idea Generation",
+      "link": "http://arxiv.org/abs/2503.11915v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0401",
+      "title": "Accessibility Considerations in the Development of an AI Action Plan",
+      "link": "http://arxiv.org/abs/2503.14522v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0402",
+      "title": "Augmenting or Automating Labor? The Effect of AI Development on New Work, Employment, and Wages",
+      "link": "http://arxiv.org/abs/2503.19159v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0403",
+      "title": "How humans evaluate AI systems for person detection in automatic train operation: Not all misses are alike",
+      "link": "http://arxiv.org/abs/2504.02664v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0404",
+      "title": "From ChatGPT to DeepSeek AI: A Comprehensive Analysis of Evolution, Deviation, and Future Implications in AI-Language Models",
+      "link": "http://arxiv.org/abs/2504.03219v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0405",
+      "title": "Closing the AI Knowledge Gap",
+      "link": "http://arxiv.org/abs/1803.07233v1",
+      "year": 2018,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0406",
+      "title": "PANDA: Facilitating Usable AI Development",
+      "link": "http://arxiv.org/abs/1804.09997v1",
+      "year": 2018,
+      "bm25_rank": 8,
+      "tfidf_rank": 10
+    },
+    {
+      "paper_id": "paper-0407",
+      "title": "AI Data poisoning attack: Manipulating game AI of Go",
+      "link": "http://arxiv.org/abs/2007.11820v3",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0408",
+      "title": "Forecasting AI Progress: Evidence from a Survey of Machine Learning Researchers",
+      "link": "http://arxiv.org/abs/2206.04132v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0409",
+      "title": "Ethics in AI through the Practitioner's View: A Grounded Theory Literature Review",
+      "link": "http://arxiv.org/abs/2206.09514v3",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0410",
+      "title": "VHetNets for AI and AI for VHetNets: An Anomaly Detection Case Study for Ubiquitous IoT",
+      "link": "http://arxiv.org/abs/2210.08132v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0411",
+      "title": "Does Explainable Artificial Intelligence Improve Human Decision-Making?",
+      "link": "http://arxiv.org/abs/2006.11194v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0412",
+      "title": "Socially Responsible AI Algorithms: Issues, Purposes, and Challenges",
+      "link": "http://arxiv.org/abs/2101.02032v5",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0413",
+      "title": "To Trust or to Think: Cognitive Forcing Functions Can Reduce Overreliance on AI in AI-assisted Decision-making",
+      "link": "http://arxiv.org/abs/2102.09692v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0414",
+      "title": "State-of-the-art in Open-domain Conversational AI: A Survey",
+      "link": "http://arxiv.org/abs/2205.00965v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0415",
+      "title": "Seamful XAI: Operationalizing Seamful Design in Explainable AI",
+      "link": "http://arxiv.org/abs/2211.06753v2",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0416",
+      "title": "SAIH: A Scalable Evaluation Methodology for Understanding AI Performance Trend on HPC Systems",
+      "link": "http://arxiv.org/abs/2212.03410v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0417",
+      "title": "AI Model Utilization Measurements For Finding Class Encoding Patterns",
+      "link": "http://arxiv.org/abs/2212.06576v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0418",
+      "title": "AI and Core Electoral Processes: Mapping the Horizons",
+      "link": "http://arxiv.org/abs/2302.03774v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0419",
+      "title": "A Systematic Literature Review of Human-Centered, Ethical, and Responsible AI",
+      "link": "http://arxiv.org/abs/2302.05284v3",
+      "year": 2023,
+      "bm25_rank": null,
+      "tfidf_rank": 5
+    },
+    {
+      "paper_id": "paper-0420",
+      "title": "The AI Revolution in Education: Will AI Replace or Assist Teachers in Higher Education?",
+      "link": "http://arxiv.org/abs/2305.01185v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0421",
+      "title": "Mosaic: Model-based Safety Analysis Framework for AI-enabled Cyber-Physical Systems",
+      "link": "http://arxiv.org/abs/2305.03882v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0422",
+      "title": "Investigating and Designing for Trust in AI-powered Code Generation Tools",
+      "link": "http://arxiv.org/abs/2305.11248v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0423",
+      "title": "RE-centric Recommendations for the Development of Trustworthy(er) Autonomous Systems",
+      "link": "http://arxiv.org/abs/2306.01774v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0424",
+      "title": "Going public: the role of public participation approaches in commercial AI labs",
+      "link": "http://arxiv.org/abs/2306.09871v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0425",
+      "title": "LeanAI: A method for AEC practitioners to effectively plan AI implementations",
+      "link": "http://arxiv.org/abs/2306.16799v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0426",
+      "title": "International Institutions for Advanced AI",
+      "link": "http://arxiv.org/abs/2307.04699v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0427",
+      "title": "Exploring AI Tool's Versatile Responses: An In-depth Analysis Across Different Industries and Its Performance Evaluation",
+      "link": "http://arxiv.org/abs/2307.05909v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0428",
+      "title": "Analyzing Character and Consciousness in AI-Generated Social Content: A Case Study of Chirper, the AI Social Network",
+      "link": "http://arxiv.org/abs/2309.08614v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0429",
+      "title": "Who Said That? Benchmarking Social Media AI Detection",
+      "link": "http://arxiv.org/abs/2310.08240v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0430",
+      "title": "Human-AI collaboration is not very collaborative yet: A taxonomy of interaction patterns in AI-assisted decision making from a systematic review",
+      "link": "http://arxiv.org/abs/2310.19778v3",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0431",
+      "title": "A Red Teaming Framework for Securing AI in Maritime Autonomous Systems",
+      "link": "http://arxiv.org/abs/2312.11500v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0432",
+      "title": "Decoding AI's Nudge: A Unified Framework to Predict Human Behavior in AI-assisted Decision Making",
+      "link": "http://arxiv.org/abs/2401.05840v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0433",
+      "title": "AI for social science and social science of AI: A Survey",
+      "link": "http://arxiv.org/abs/2401.11839v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0434",
+      "title": "Choosing the Right Path for AI Integration in Engineering Companies: A Strategic Guide",
+      "link": "http://arxiv.org/abs/2402.00011v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0435",
+      "title": "Multi-stakeholder Perspective on Responsible Artificial Intelligence and Acceptability in Education",
+      "link": "http://arxiv.org/abs/2402.15027v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0436",
+      "title": "The Artificial Intelligence Ontology: LLM-assisted construction of AI concept hierarchies",
+      "link": "http://arxiv.org/abs/2404.03044v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0437",
+      "title": "Analysis and prevention of AI-based phishing email attacks",
+      "link": "http://arxiv.org/abs/2405.05435v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0438",
+      "title": "Towards Feature Engineering with Human and AI's Knowledge: Understanding Data Science Practitioners' Perceptions in Human&AI-Assisted Feature Engineering Design",
+      "link": "http://arxiv.org/abs/2405.14107v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0439",
+      "title": "AI Diffusion to Low-Middle Income Countries; A Blessing or a Curse?",
+      "link": "http://arxiv.org/abs/2405.20399v2",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0440",
+      "title": "Decolonial AI as Disenclosure",
+      "link": "http://arxiv.org/abs/2407.13050v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0441",
+      "title": "Rolling in the deep of cognitive and AI biases",
+      "link": "http://arxiv.org/abs/2407.21202v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0442",
+      "title": "Responsible AI Question Bank: A Comprehensive Tool for AI Risk Assessment",
+      "link": "http://arxiv.org/abs/2408.11820v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0443",
+      "title": "Traceable AI-driven Avatars Using Multi-factors of Physical World and Metaverse",
+      "link": "http://arxiv.org/abs/2408.17121v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0444",
+      "title": "AI-powered test automation tools: A systematic review and empirical evaluation",
+      "link": "http://arxiv.org/abs/2409.00411v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0445",
+      "title": "DiReDi: Distillation and Reverse Distillation for AIoT Applications",
+      "link": "http://arxiv.org/abs/2409.08308v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0446",
+      "title": "Effects of AI Feedback on Learning, the Skill Gap, and Intellectual Diversity",
+      "link": "http://arxiv.org/abs/2409.18660v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0447",
+      "title": "Examining the Prevalence and Dynamics of AI-Generated Media in Art Subreddits",
+      "link": "http://arxiv.org/abs/2410.07302v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 6
+    },
+    {
+      "paper_id": "paper-0448",
+      "title": "Ethical AI in Retail: Consumer Privacy and Fairness",
+      "link": "http://arxiv.org/abs/2410.15369v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0449",
+      "title": "Space-ground Fluid AI for 6G Edge Intelligence",
+      "link": "http://arxiv.org/abs/2411.15845v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0450",
+      "title": "Frontier AI systems have surpassed the self-replicating red line",
+      "link": "http://arxiv.org/abs/2412.12140v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0451",
+      "title": "AI-Enhanced Sensemaking: Exploring the Design of a Generative AI-Based Assistant to Support Genetic Professionals",
+      "link": "http://arxiv.org/abs/2412.15444v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0452",
+      "title": "Building Symbiotic AI: Reviewing the AI Act for a Human-Centred, Principle-Based Framework",
+      "link": "http://arxiv.org/abs/2501.08046v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0453",
+      "title": "AI-driven Wireless Positioning: Fundamentals, Standards, State-of-the-art, and Challenges",
+      "link": "http://arxiv.org/abs/2501.14970v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0454",
+      "title": "An Empirical Study on Decision-Making Aspects in Responsible Software Engineering for AI",
+      "link": "http://arxiv.org/abs/2501.15691v2",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0455",
+      "title": "Immersion for AI: Immersive Learning with Artificial Intelligence",
+      "link": "http://arxiv.org/abs/2502.03504v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0456",
+      "title": "Bridging the Data Gap in AI Reliability Research and Establishing DR-AIR, a Comprehensive Data Repository for AI Reliability",
+      "link": "http://arxiv.org/abs/2502.12386v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0457",
+      "title": "From G-Factor to A-Factor: Establishing a Psychometric Framework for AI Literacy",
+      "link": "http://arxiv.org/abs/2503.16517v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0458",
+      "title": "Tasks and Roles in Legal AI: Data Curation, Annotation, and Verification",
+      "link": "http://arxiv.org/abs/2504.01349v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0459",
+      "title": "When is using AI the rational choice? The importance of counterfactuals in AI deployment decisions",
+      "link": "http://arxiv.org/abs/2504.05333v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0460",
+      "title": "eXtended Artificial Intelligence: New Prospects of Human-AI Interaction Research",
+      "link": "http://arxiv.org/abs/2103.15004v3",
+      "year": 2021,
+      "bm25_rank": 2,
+      "tfidf_rank": 10
+    },
+    {
+      "paper_id": "paper-0461",
+      "title": "Ever heard of ethical AI? Investigating the salience of ethical AI issues among the German population",
+      "link": "http://arxiv.org/abs/2207.14086v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0462",
+      "title": "The European AI Liability Directives -- Critique of a Half-Hearted Approach and Lessons for the Future",
+      "link": "http://arxiv.org/abs/2211.13960v6",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0463",
+      "title": "Quantifying A Firm's AI Engagement: Constructing Objective, Data-Driven, AI Stock Indices Using 10-K Filings",
+      "link": "http://arxiv.org/abs/2501.01763v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0464",
+      "title": "Review of state-of-the-arts in artificial intelligence with application to AI safety problem",
+      "link": "http://arxiv.org/abs/1605.04232v2",
+      "year": 2016,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0465",
+      "title": "Stoic Ethics for Artificial Agents",
+      "link": "http://arxiv.org/abs/1701.02388v2",
+      "year": 2017,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0466",
+      "title": "Using experimental game theory to transit human values to ethical AI",
+      "link": "http://arxiv.org/abs/1711.05905v1",
+      "year": 2017,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0467",
+      "title": "Federated AI for building AI Solutions across Multiple Agencies",
+      "link": "http://arxiv.org/abs/1809.10036v1",
+      "year": 2018,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0468",
+      "title": "Ethics of Artificial Intelligence Demarcations",
+      "link": "http://arxiv.org/abs/1904.10239v2",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0469",
+      "title": "Cognitive Anthropomorphism of AI: How Humans and Computers Classify Images",
+      "link": "http://arxiv.org/abs/2002.03024v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0470",
+      "title": "Towards AI Forensics: Did the Artificial Intelligence System Do It?",
+      "link": "http://arxiv.org/abs/2005.13635v3",
+      "year": 2020,
+      "bm25_rank": 2,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0471",
+      "title": "Towards Game-Playing AI Benchmarks via Performance Reporting Standards",
+      "link": "http://arxiv.org/abs/2007.02742v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0472",
+      "title": "A clarification of misconceptions, myths and desired status of artificial intelligence",
+      "link": "http://arxiv.org/abs/2008.05607v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0473",
+      "title": "An Ontological AI-and-Law Framework for the Autonomous Levels of AI Legal Reasoning",
+      "link": "http://arxiv.org/abs/2008.07328v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0474",
+      "title": "Ideal theory in AI ethics",
+      "link": "http://arxiv.org/abs/2011.02279v2",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0475",
+      "title": "Toward Ethical AIED",
+      "link": "http://arxiv.org/abs/2203.07067v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0476",
+      "title": "XCloud: Design and Implementation of AI Cloud Platform with RESTful API Service",
+      "link": "http://arxiv.org/abs/1912.10344v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0477",
+      "title": "Business (mis)Use Cases of Generative AI",
+      "link": "http://arxiv.org/abs/2003.07679v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0478",
+      "title": "On the Ethics of Building AI in a Responsible Manner",
+      "link": "http://arxiv.org/abs/2004.04644v1",
+      "year": 2020,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0479",
+      "title": "Responsible AI and Its Stakeholders",
+      "link": "http://arxiv.org/abs/2004.11434v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 4
+    },
+    {
+      "paper_id": "paper-0480",
+      "title": "Knowledge AI: New Medical AI Solution for Medical image Diagnosis",
+      "link": "http://arxiv.org/abs/2101.03063v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0481",
+      "title": "Ethical AI for Social Good",
+      "link": "http://arxiv.org/abs/2107.14044v1",
+      "year": 2021,
+      "bm25_rank": 3,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0482",
+      "title": "Sustainable Artificial Intelligence through Continual Learning",
+      "link": "http://arxiv.org/abs/2111.09437v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0483",
+      "title": "Expose Uncertainty, Instill Distrust, Avoid Explanations: Towards Ethical Guidelines for AI",
+      "link": "http://arxiv.org/abs/2112.01281v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0484",
+      "title": "A Historical Interaction between Artificial Intelligence and Philosophy",
+      "link": "http://arxiv.org/abs/2208.04148v1",
+      "year": 2022,
+      "bm25_rank": 3,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0485",
+      "title": "\"Melatonin\": A Case Study on AI-induced Musical Style",
+      "link": "http://arxiv.org/abs/2208.08968v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0486",
+      "title": "AI in HCI Design and User Experience",
+      "link": "http://arxiv.org/abs/2301.00987v3",
+      "year": 2023,
+      "bm25_rank": 2,
+      "tfidf_rank": 4
+    },
+    {
+      "paper_id": "paper-0487",
+      "title": "Study of Optical Networks, 5G, Artificial Intelligence and Their Applications",
+      "link": "http://arxiv.org/abs/2301.13396v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0488",
+      "title": "Assessing the impact of regulations and standards on innovation in the field of AI",
+      "link": "http://arxiv.org/abs/2302.04110v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0489",
+      "title": "The Full Rights Dilemma for A.I. Systems of Debatable Personhood",
+      "link": "http://arxiv.org/abs/2303.17509v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0490",
+      "title": "Diversity and Inclusion in Artificial Intelligence",
+      "link": "http://arxiv.org/abs/2305.12728v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0491",
+      "title": "Enough With \"Human-AI Collaboration\"",
+      "link": "http://arxiv.org/abs/2306.01615v1",
+      "year": 2023,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0492",
+      "title": "A survey of Generative AI Applications",
+      "link": "http://arxiv.org/abs/2306.02781v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0493",
+      "title": "From OECD to India: Exploring cross-cultural differences in perceived trust, responsibility and reliance of AI and human experts",
+      "link": "http://arxiv.org/abs/2307.15452v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0494",
+      "title": "Explainable Sustainability for AI in the Arts",
+      "link": "http://arxiv.org/abs/2309.14877v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0495",
+      "title": "Brave new world: Artificial Intelligence in teaching and learning",
+      "link": "http://arxiv.org/abs/2310.06856v1",
+      "year": 2023,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0496",
+      "title": "Expanding the Set of Pragmatic Considerations in Conversational AI",
+      "link": "http://arxiv.org/abs/2310.18435v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0497",
+      "title": "Missing Value Chain in Generative AI Governance China as an example",
+      "link": "http://arxiv.org/abs/2401.02799v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0498",
+      "title": "How Spammers and Scammers Leverage AI-Generated Images on Facebook for Audience Growth",
+      "link": "http://arxiv.org/abs/2403.12838v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0499",
+      "title": "The Hall of Singularity: VR Experience of Prophecy by AI",
+      "link": "http://arxiv.org/abs/2404.00033v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0500",
+      "title": "Visualization for Human-Centered AI Tools",
+      "link": "http://arxiv.org/abs/2404.02147v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0501",
+      "title": "AI Knowledge and Reasoning: Emulating Expert Creativity in Scientific Research",
+      "link": "http://arxiv.org/abs/2404.04436v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0502",
+      "title": "Designing Safe and Engaging AI Experiences for Children: Towards the Definition of Best Practices in UI/UX Design",
+      "link": "http://arxiv.org/abs/2404.14218v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0503",
+      "title": "On the Combination of AI and Wireless Technologies: 3GPP Standardization Progress",
+      "link": "http://arxiv.org/abs/2407.10984v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0504",
+      "title": "She Works, He Works: A Curious Exploration of Gender Bias in AI-Generated Imagery",
+      "link": "http://arxiv.org/abs/2407.18524v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0505",
+      "title": "First Analysis of the EU Artifical Intelligence Act: Towards a Global Standard for Trustworthy AI?",
+      "link": "http://arxiv.org/abs/2408.08318v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0506",
+      "title": "Evaluating the Effects of AI Directors for Quest Selection",
+      "link": "http://arxiv.org/abs/2410.03733v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0507",
+      "title": "AI Assistants for Incident Lifecycle in a Microservice Environment: A Systematic Literature Review",
+      "link": "http://arxiv.org/abs/2410.04334v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0508",
+      "title": "\"I Am the One and Only, Your Cyber BFF\": Understanding the Impact of GenAI Requires Understanding the Impact of Anthropomorphic AI",
+      "link": "http://arxiv.org/abs/2410.08526v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0509",
+      "title": "Generative AI Policies under the Microscope: How CS Conferences Are Navigating the New Frontier in Scholarly Writing",
+      "link": "http://arxiv.org/abs/2410.11977v4",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0510",
+      "title": "Engineering Trustworthy AI: A Developer Guide for Empirical Risk Minimization",
+      "link": "http://arxiv.org/abs/2410.19361v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0511",
+      "title": "Causal Responsibility Attribution for Human-AI Collaboration",
+      "link": "http://arxiv.org/abs/2411.03275v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0512",
+      "title": "AI Ethics in Smart Homes: Progress, User Requirements and Challenges",
+      "link": "http://arxiv.org/abs/2412.09813v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0513",
+      "title": "Measuring DNS Censorship of Generative AI Platforms",
+      "link": "http://arxiv.org/abs/2412.14286v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0514",
+      "title": "Patterns and Purposes: A Cross-Journal Analysis of AI Tool Usage in Academic Writing",
+      "link": "http://arxiv.org/abs/2502.00632v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0515",
+      "title": "Exploring AI Writers: Technology, Impact, and Future Prospects",
+      "link": "http://arxiv.org/abs/2503.05753v1",
+      "year": 2025,
+      "bm25_rank": 8,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0516",
+      "title": "Toward AI-driven Multimodal Interfaces for Industrial CAD Modeling",
+      "link": "http://arxiv.org/abs/2503.16824v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0517",
+      "title": "How to Test for Compliance with Human Oversight Requirements in AI Regulation?",
+      "link": "http://arxiv.org/abs/2504.03300v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0518",
+      "title": "Many Light Higgs Bosons in the NMSSM",
+      "link": "http://arxiv.org/abs/0811.3537v1",
+      "year": 2008,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0519",
+      "title": "Building Ethically Bounded AI",
+      "link": "http://arxiv.org/abs/1812.03980v1",
+      "year": 2018,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0520",
+      "title": "Textured Neural Avatars",
+      "link": "http://arxiv.org/abs/1905.08776v1",
+      "year": 2019,
+      "bm25_rank": 3,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0521",
+      "title": "Good AI for the Present of Humanity Democratizing AI Governance",
+      "link": "http://arxiv.org/abs/2007.04477v13",
+      "year": 2020,
+      "bm25_rank": 4,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0522",
+      "title": "AI Tax: The Hidden Cost of AI Data Center Applications",
+      "link": "http://arxiv.org/abs/2007.10571v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0523",
+      "title": "What Makes a Popular Academic AI Repository?",
+      "link": "http://arxiv.org/abs/2010.02472v2",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0524",
+      "title": "Truthful AI: Developing and governing AI that does not lie",
+      "link": "http://arxiv.org/abs/2110.06674v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 5
+    },
+    {
+      "paper_id": "paper-0525",
+      "title": "German AI Start-Ups and AI Ethics: Using A Social Practice Lens for Assessing and Implementing Socio-Technical Innovation",
+      "link": "http://arxiv.org/abs/2206.09978v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0526",
+      "title": "Do We Need Explainable AI in Companies? Investigation of Challenges, Expectations, and Chances from Employees' Perspective",
+      "link": "http://arxiv.org/abs/2210.03527v2",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0527",
+      "title": "Deceptive AI Systems That Give Explanations Are Just as Convincing as Honest AI Systems in Human-Machine Decision Making",
+      "link": "http://arxiv.org/abs/2210.08960v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0528",
+      "title": "AI Ethics Needs Good Data",
+      "link": "http://arxiv.org/abs/2102.07333v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0529",
+      "title": "A local characterization for the Cuntz semigroup of AI-algebras",
+      "link": "http://arxiv.org/abs/2102.13557v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0530",
+      "title": "Software Engineering for AI-Based Systems: A Survey",
+      "link": "http://arxiv.org/abs/2105.01984v2",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0531",
+      "title": "The State of AI Ethics Report (Volume 5)",
+      "link": "http://arxiv.org/abs/2108.03929v1",
+      "year": 2021,
+      "bm25_rank": 3,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0532",
+      "title": "In Oxford Handbook on AI Governance: The Role of Workers in AI Ethics and Governance",
+      "link": "http://arxiv.org/abs/2108.07700v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0533",
+      "title": "Statistical Perspectives on Reliability of Artificial Intelligence Systems",
+      "link": "http://arxiv.org/abs/2111.05391v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0534",
+      "title": "Australia's Approach to AI Governance in Security and Defence",
+      "link": "http://arxiv.org/abs/2112.01252v2",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0535",
+      "title": "Should I Follow AI-based Advice? Measuring Appropriate Reliance in Human-AI Decision-Making",
+      "link": "http://arxiv.org/abs/2204.06916v1",
+      "year": 2022,
+      "bm25_rank": 2,
+      "tfidf_rank": 5
+    },
+    {
+      "paper_id": "paper-0536",
+      "title": "AI Ethics: An Empirical Study on the Views of Practitioners and Lawmakers",
+      "link": "http://arxiv.org/abs/2207.01493v2",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0537",
+      "title": "Fairness in Agreement With European Values: An Interdisciplinary Perspective on AI Regulation",
+      "link": "http://arxiv.org/abs/2207.01510v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 4
+    },
+    {
+      "paper_id": "paper-0538",
+      "title": "Measuring an artificial intelligence agent's trust in humans using machine incentives",
+      "link": "http://arxiv.org/abs/2212.13371v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0539",
+      "title": "Artificial Influence: An Analysis Of AI-Driven Persuasion",
+      "link": "http://arxiv.org/abs/2303.08721v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0540",
+      "title": "Fairness And Bias in Artificial Intelligence: A Brief Survey of Sources, Impacts, And Mitigation Strategies",
+      "link": "http://arxiv.org/abs/2304.07683v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0541",
+      "title": "Everyone Can Be Picasso? A Computational Framework into the Myth of Human versus AI Painting",
+      "link": "http://arxiv.org/abs/2304.07999v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0542",
+      "title": "Governance of the AI, by the AI, and for the AI",
+      "link": "http://arxiv.org/abs/2305.03719v1",
+      "year": 2023,
+      "bm25_rank": null,
+      "tfidf_rank": 7
+    },
+    {
+      "paper_id": "paper-0543",
+      "title": "A method for the ethical analysis of brain-inspired AI",
+      "link": "http://arxiv.org/abs/2305.10938v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0544",
+      "title": "AI Regulation in the European Union: Examining Non-State Actor Preferences",
+      "link": "http://arxiv.org/abs/2305.11523v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0545",
+      "title": "Artificial intelligence adoption in the physical sciences, natural sciences, life sciences, social sciences and the arts and humanities: A bibliometric analysis of research publications from 1960-2021",
+      "link": "http://arxiv.org/abs/2306.09145v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0546",
+      "title": "Human-AI Coevolution",
+      "link": "http://arxiv.org/abs/2306.13723v2",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0547",
+      "title": "Bending the Automation Bias Curve: A Study of Human and AI-based Decision Making in National Security Contexts",
+      "link": "http://arxiv.org/abs/2306.16507v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0548",
+      "title": "AI and Non AI Assessments for Dementia",
+      "link": "http://arxiv.org/abs/2307.01210v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0549",
+      "title": "The Impact of Imperfect XAI on Human-AI Decision-Making",
+      "link": "http://arxiv.org/abs/2307.13566v4",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0550",
+      "title": "Training Towards Critical Use: Learning to Situate AI Predictions Relative to Human Knowledge",
+      "link": "http://arxiv.org/abs/2308.15700v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0551",
+      "title": "The AI Revolution: Opportunities and Challenges for the Finance Sector",
+      "link": "http://arxiv.org/abs/2308.16538v1",
+      "year": 2023,
+      "bm25_rank": 2,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0552",
+      "title": "Advancing Perception in Artificial Intelligence through Principles of Cognitive Science",
+      "link": "http://arxiv.org/abs/2310.08803v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0553",
+      "title": "AI Potentiality and Awareness: A Position Paper from the Perspective of Human-AI Teaming in Cybersecurity",
+      "link": "http://arxiv.org/abs/2310.12162v1",
+      "year": 2023,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0554",
+      "title": "Responsible AI Research Needs Impact Statements Too",
+      "link": "http://arxiv.org/abs/2311.11776v1",
+      "year": 2023,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0555",
+      "title": "Two Types of AI Existential Risk: Decisive and Accumulative",
+      "link": "http://arxiv.org/abs/2401.07836v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0556",
+      "title": "Foregrounding Artist Opinions: A Survey Study on Transparency, Ownership, and Fairness in AI Generative Art",
+      "link": "http://arxiv.org/abs/2401.15497v5",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0557",
+      "title": "Towards AI Accountability Infrastructure: Gaps and Opportunities in AI Audit Tooling",
+      "link": "http://arxiv.org/abs/2402.17861v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0558",
+      "title": "The Situate AI Guidebook: Co-Designing a Toolkit to Support Multi-Stakeholder Early-stage Deliberations Around Public Sector AI Proposals",
+      "link": "http://arxiv.org/abs/2402.18774v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0559",
+      "title": "Human-AI Collaboration Increases Skill Tagging Speed but Degrades Accuracy",
+      "link": "http://arxiv.org/abs/2403.02259v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0560",
+      "title": "The Necessity of AI Audit Standards Boards",
+      "link": "http://arxiv.org/abs/2404.13060v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0561",
+      "title": "AI Procurement Checklists: Revisiting Implementation in the Age of AI Governance",
+      "link": "http://arxiv.org/abs/2404.14660v1",
+      "year": 2024,
+      "bm25_rank": 2,
+      "tfidf_rank": 3
+    },
+    {
+      "paper_id": "paper-0562",
+      "title": "The AI Review Lottery: Widespread AI-Assisted Peer Reviews Boost Paper Scores and Acceptance Rates",
+      "link": "http://arxiv.org/abs/2405.02150v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0563",
+      "title": "AI Data Readiness Inspector (AIDRIN) for Quantitative Assessment of Data Readiness for AI",
+      "link": "http://arxiv.org/abs/2406.19256v2",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0564",
+      "title": "\"My Kind of Woman\": Analysing Gender Stereotypes in AI through The Averageness Theory and EU Law",
+      "link": "http://arxiv.org/abs/2407.17474v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0565",
+      "title": "MORTAR: A Model-based Runtime Action Repair Framework for AI-enabled Cyber-Physical Systems",
+      "link": "http://arxiv.org/abs/2408.03892v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0566",
+      "title": "Super-intelligence or Superstition? Exploring Psychological Factors Influencing Belief in AI Predictions about Personal Behavior",
+      "link": "http://arxiv.org/abs/2408.06602v3",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0567",
+      "title": "Strategic AI adoption in SMEs: A Prescriptive Framework",
+      "link": "http://arxiv.org/abs/2408.11825v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0568",
+      "title": "Explainable AI: Definition and attributes of a good explanation for health AI",
+      "link": "http://arxiv.org/abs/2409.15338v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0569",
+      "title": "Meta-Sealing: A Revolutionizing Integrity Assurance Protocol for Transparent, Tamper-Proof, and Trustworthy AI System",
+      "link": "http://arxiv.org/abs/2411.00069v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0570",
+      "title": "ChatCollab: Exploring Collaboration Between Humans and AI Agents in Software Teams",
+      "link": "http://arxiv.org/abs/2412.01992v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0571",
+      "title": "Analyzing the Impact of AI Tools on Student Study Habits and Academic Performance",
+      "link": "http://arxiv.org/abs/2412.02166v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0572",
+      "title": "Who is Helping Whom? Student Concerns about AI- Teacher Collaboration in Higher Education Classrooms",
+      "link": "http://arxiv.org/abs/2412.14469v1",
+      "year": 2024,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0573",
+      "title": "Why are we living the age of AI applications right now? The long innovation path from AI's birth to a child's bedtime magic",
+      "link": "http://arxiv.org/abs/2501.06929v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0574",
+      "title": "Bridging the Communication Gap: Evaluating AI Labeling Practices for Trustworthy AI Development",
+      "link": "http://arxiv.org/abs/2501.11909v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0575",
+      "title": "Human-Alignment Influences the Utility of AI-assisted Decision Making",
+      "link": "http://arxiv.org/abs/2501.14035v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0576",
+      "title": "Educating a Responsible AI Workforce: Piloting a Curricular Module on AI Policy in a Graduate Machine Learning Course",
+      "link": "http://arxiv.org/abs/2502.07931v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0577",
+      "title": "Multi-Agent Actor-Critic Generative AI for Query Resolution and Analysis",
+      "link": "http://arxiv.org/abs/2502.13164v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0578",
+      "title": "The \"Who'', \"What'', and \"How'' of Responsible AI Governance: A Systematic Review and Meta-Analysis of (Actor, Stage)-Specific Tools",
+      "link": "http://arxiv.org/abs/2502.13294v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0579",
+      "title": "Integrating Generative AI in Cybersecurity Education: Case Study Insights on Pedagogical Strategies, Critical Thinking, and Responsible AI Use",
+      "link": "http://arxiv.org/abs/2502.15357v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0580",
+      "title": "Will the Technological Singularity Come Soon? Modeling the Dynamics of Artificial Intelligence Development via Multi-Logistic Growth Process",
+      "link": "http://arxiv.org/abs/2502.19425v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0581",
+      "title": "Adapting to Educate: Conversational AI's Role in Mathematics Education Across Different Educational Contexts",
+      "link": "http://arxiv.org/abs/2503.02999v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0582",
+      "title": "AI Safety is Stuck in Technical Terms -- A System Safety Response to the International AI Safety Report",
+      "link": "http://arxiv.org/abs/2503.04743v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0583",
+      "title": "Advancing AI Negotiations: New Theory and Evidence from a Large-Scale Autonomous Negotiations Competition",
+      "link": "http://arxiv.org/abs/2503.06416v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0584",
+      "title": "Objective Measurement of AI Literacy: Development and Validation of the AI Competency Objective Scale (AICOS)",
+      "link": "http://arxiv.org/abs/2503.12921v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0585",
+      "title": "Adoption of Watermarking for Generative AI Systems in Practice and Implications under the new EU AI Act",
+      "link": "http://arxiv.org/abs/2503.18156v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0586",
+      "title": "SoK: Frontier AI's Impact on the Cybersecurity Landscape",
+      "link": "http://arxiv.org/abs/2504.05408v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0587",
+      "title": "The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search",
+      "link": "http://arxiv.org/abs/2504.08066v1",
+      "year": 2025,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0588",
+      "title": "Ways of Applying Artificial Intelligence in Software Engineering",
+      "link": "http://arxiv.org/abs/1802.02033v2",
+      "year": 2018,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0589",
+      "title": "Unpredictability of AI",
+      "link": "http://arxiv.org/abs/1905.13053v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0590",
+      "title": "Principles alone cannot guarantee ethical AI",
+      "link": "http://arxiv.org/abs/1906.06668v2",
+      "year": 2019,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0591",
+      "title": "Responsible AI by Design in Practice",
+      "link": "http://arxiv.org/abs/1909.12838v2",
+      "year": 2019,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0592",
+      "title": "Solidarity should be a core ethical principle of Artificial Intelligence",
+      "link": "http://arxiv.org/abs/1910.12583v1",
+      "year": 2019,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0593",
+      "title": "Regulating Artificial Intelligence: Proposal for a Global Solution",
+      "link": "http://arxiv.org/abs/2005.11072v1",
+      "year": 2020,
+      "bm25_rank": null,
+      "tfidf_rank": null
+    },
+    {
+      "paper_id": "paper-0594",
+      "title": "The Convergence of AI code and Cortical Functioning -- a Commentary",
+      "link": "http://arxiv.org/abs/2010.09101v1",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0595",
+      "title": "AI virtues -- The missing link in putting AI ethics into practice",
+      "link": "http://arxiv.org/abs/2011.12750v2",
+      "year": 2020,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0596",
+      "title": "Artificial intelligence for Sustainable Energy: A Contextual Topic Modeling and Content Analysis",
+      "link": "http://arxiv.org/abs/2110.00828v1",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0597",
+      "title": "Rebuilding Trust: Queer in AI Approach to Artificial Intelligence Risk Management",
+      "link": "http://arxiv.org/abs/2110.09271v3",
+      "year": 2021,
+      "bm25_rank": 1,
+      "tfidf_rank": 1
+    },
+    {
+      "paper_id": "paper-0598",
+      "title": "Financial Vision Based Reinforcement Learning Trading Strategy",
+      "link": "http://arxiv.org/abs/2202.04115v1",
+      "year": 2022,
+      "bm25_rank": 4,
+      "tfidf_rank": 2
+    },
+    {
+      "paper_id": "paper-0599",
+      "title": "A Mental-Model Centric Landscape of Human-AI Symbiosis",
+      "link": "http://arxiv.org/abs/2202.09447v1",
+      "year": 2022,
+      "bm25_rank": 1,
+      "tfidf_rank": 4
+    },
+    {
+      "paper_id": "paper-0600",
+      "title": "Responsible-AI-by-Design: a Pattern Collection for Designing Responsible AI Systems",
+      "link": "http://arxiv.org/abs/2203.00905v2",
+      "year": 2022,
+      "bm25_rank": 3,
+      "tfidf_rank": 4
+    }
+  ],
+  "paired_tfidf_minus_bm25_mrr": {
+    "mean_difference": -0.0015734126984126985,
+    "95ci": [
+      -0.017315525793650793,
+      0.01361840277777773
+    ]
+  }
+}

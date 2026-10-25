@@ -1,0 +1,38 @@
+{
+  "paper_id": "retrieval-augmented-generation",
+  "reference_summary": "The paper presents retrieval-augmented generation as a way to combine a pretrained sequence-to-sequence model with an explicit non-parametric memory. Its implementation pairs BART with a dense Wikipedia index accessed by a neural retriever. RAG-Sequence uses the same retrieved document throughout an output sequence, whereas RAG-Token can condition different tokens on different documents. Experiments cover open-domain question answering, language generation, and fact verification. The authors report state-of-the-art results on three open-domain QA tasks and more specific, diverse, and factual generation than a parametric-only baseline.",
+  "annotation_note": "Questions and references were written from the source paper before inspecting generated answers. Relevant chunks were judged against fixed 1000-character/150-overlap chunking.",
+  "questions": [
+    {
+      "question": "Which parametric and non-parametric components form the RAG model?",
+      "reference_answer": "The parametric memory is a pretrained seq2seq transformer, and the non-parametric memory is a dense vector index of Wikipedia accessed by a pretrained neural retriever.",
+      "relevant_chunk_ids": ["chunk-0002", "chunk-0006"]
+    },
+    {
+      "question": "What external knowledge source and retriever does the implementation use?",
+      "reference_answer": "It uses a dense vector index of Wikipedia and the Dense Passage Retriever, with BART as the generator.",
+      "relevant_chunk_ids": ["chunk-0002", "chunk-0006"]
+    },
+    {
+      "question": "How do RAG-Sequence and RAG-Token differ?",
+      "reference_answer": "RAG-Sequence uses the same retrieved document to generate the complete sequence. RAG-Token can draw a different latent document for each target token.",
+      "relevant_chunk_ids": ["chunk-0002", "chunk-0011", "chunk-0012", "chunk-0013"]
+    },
+    {
+      "question": "Which four open-domain QA datasets were evaluated?",
+      "reference_answer": "The paper evaluated Natural Questions, TriviaQA, WebQuestions, and CuratedTrec, reporting Exact Match scores.",
+      "relevant_chunk_ids": ["chunk-0020", "chunk-0091"]
+    },
+    {
+      "question": "What generation qualities improved relative to the BART baseline?",
+      "reference_answer": "On MS-MARCO and Jeopardy question generation, the RAG models produced responses that were more factual, specific, and diverse than the BART baseline.",
+      "relevant_chunk_ids": ["chunk-0003", "chunk-0009"]
+    },
+    {
+      "question": "What Exact Match score did RAG achieve on SQuAD?",
+      "answerable": false,
+      "reference_answer": "Not reported. SQuAD is not one of the open-domain QA datasets evaluated in this paper.",
+      "relevant_chunk_ids": []
+    }
+  ]
+}

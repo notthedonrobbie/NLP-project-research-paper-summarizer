@@ -1,0 +1,20 @@
+{
+  "reference_summary": "Replace this with an independently written human reference summary.",
+  "questions": [
+    {
+      "question": "What dataset was used?",
+      "reference_answer": "Write the reference answer without using system output.",
+      "relevant_chunk_ids": ["chunk-0003"]
+    },
+    {
+      "question": "What were the main results?",
+      "reference_answer": "Include important numerical results where applicable.",
+      "relevant_chunk_ids": ["chunk-0007", "chunk-0008"]
+    },
+    {
+      "question": "What limitations did the authors identify?",
+      "reference_answer": "Use only limitations explicitly reported by the authors.",
+      "relevant_chunk_ids": ["chunk-0010"]
+    }
+  ]
+}

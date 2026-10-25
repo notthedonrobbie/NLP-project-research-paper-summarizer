@@ -1,0 +1,46 @@
+{
+  "name": "PaperTrail pilot scientific-document corpus",
+  "created": "2026-10-25",
+  "description": "Three publicly accessible NLP papers used for a small reproducibility pilot. PDFs are local evaluation inputs and are excluded from Git redistribution.",
+  "papers": [
+    {
+      "id": "attention-is-all-you-need",
+      "title": "Attention Is All You Need",
+      "authors": "Vaswani et al.",
+      "year": 2017,
+      "landing_page": "https://arxiv.org/abs/1706.03762",
+      "pdf_url": "https://arxiv.org/pdf/1706.03762",
+      "local_pdf": "data/papers/attention-is-all-you-need.pdf",
+      "annotations": "data/annotations/attention-is-all-you-need.json",
+      "pages": 15,
+      "chunks": 56,
+      "sha256": "bdfaa68d8984f0dc02beaca527b76f207d99b666d31d1da728ee0728182df697"
+    },
+    {
+      "id": "retrieval-augmented-generation",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "authors": "Lewis et al.",
+      "year": 2020,
+      "landing_page": "https://arxiv.org/abs/2005.11401",
+      "pdf_url": "https://arxiv.org/pdf/2005.11401",
+      "local_pdf": "data/papers/retrieval-augmented-generation.pdf",
+      "annotations": "data/annotations/retrieval-augmented-generation.json",
+      "pages": 19,
+      "chunks": 93,
+      "sha256": "23e3249e9a1e75418d82efecab0ea8c4d033b89c93742f63208d47ce01f21233"
+    },
+    {
+      "id": "textrank",
+      "title": "TextRank: Bringing Order into Text",
+      "authors": "Mihalcea and Tarau",
+      "year": 2004,
+      "landing_page": "https://aclanthology.org/W04-3252/",
+      "pdf_url": "https://aclanthology.org/W04-3252.pdf",
+      "local_pdf": "data/papers/textrank.pdf",
+      "annotations": "data/annotations/textrank.json",
+      "pages": 8,
+      "chunks": 56,
+      "sha256": "9ff1db582adeef6698a165825bdacaaa43fb47fd7319550218ed113bdf0ba42d"
+    }
+  ]
+}

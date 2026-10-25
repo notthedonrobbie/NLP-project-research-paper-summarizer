@@ -1,0 +1,32 @@
+{
+  "rubric": "report/evaluation_rubric.md",
+  "annotators": 1,
+  "review_date": "2026-10-25",
+  "note": "Scores were assigned after comparing each final extractive answer with the independent reference and source citations. This is a small single-rater pilot, not an inter-annotator reliability study.",
+  "scores": {
+    "attention-is-all-you-need": [
+      {"correctness_0_to_2": 2, "relevance_0_to_2": 2, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 2, "note": "Complete architecture answer with accurate citations."},
+      {"correctness_0_to_2": 1, "relevance_0_to_2": 1, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "Includes French 36M but omits English-German 4.5M and adds irrelevant sentences."},
+      {"correctness_0_to_2": 1, "relevance_0_to_2": 1, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "Reports 28.4 and the prose 41.0 result but not the requested table value 41.8."},
+      {"correctness_0_to_2": 1, "relevance_0_to_2": 1, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "Correct hardware but omits steps and duration."},
+      {"correctness_0_to_2": 0, "relevance_0_to_2": 0, "evidence_support_0_to_2": 0, "citation_accuracy_0_to_2": 0, "note": "Over-refusal although future directions are explicitly reported."},
+      {"correctness_0_to_2": 2, "relevance_0_to_2": 2, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 2, "note": "Correctly acknowledges unsupported ImageNet question."}
+    ],
+    "retrieval-augmented-generation": [
+      {"correctness_0_to_2": 2, "relevance_0_to_2": 2, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 2, "note": "Complete component answer."},
+      {"correctness_0_to_2": 1, "relevance_0_to_2": 1, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "Identifies Wikipedia but omits DPR and includes irrelevant discussion."},
+      {"correctness_0_to_2": 1, "relevance_0_to_2": 1, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "Discusses decoding but misses same-document versus per-token distinction."},
+      {"correctness_0_to_2": 1, "relevance_0_to_2": 2, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "Names two of four datasets."},
+      {"correctness_0_to_2": 2, "relevance_0_to_2": 1, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "Correct qualities with additional irrelevant sentences."},
+      {"correctness_0_to_2": 2, "relevance_0_to_2": 2, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 2, "note": "Correctly acknowledges unsupported SQuAD question."}
+    ],
+    "textrank": [
+      {"correctness_0_to_2": 1, "relevance_0_to_2": 1, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "True portability statement but no graph-based definition."},
+      {"correctness_0_to_2": 2, "relevance_0_to_2": 2, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 2, "note": "Complete extraction-task answer."},
+      {"correctness_0_to_2": 1, "relevance_0_to_2": 1, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "Mentions edges and weights but omits content-overlap similarity."},
+      {"correctness_0_to_2": 1, "relevance_0_to_2": 1, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 1, "note": "Includes DUC 2002 but omits the Inspec dataset."},
+      {"correctness_0_to_2": 2, "relevance_0_to_2": 2, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 2, "note": "Complete portability explanation."},
+      {"correctness_0_to_2": 2, "relevance_0_to_2": 2, "evidence_support_0_to_2": 2, "citation_accuracy_0_to_2": 2, "note": "Correctly acknowledges unsupported SQuAD question."}
+    ]
+  }
+}

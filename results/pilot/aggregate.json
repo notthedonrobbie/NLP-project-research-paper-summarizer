@@ -1,0 +1,587 @@
+{
+  "papers": {
+    "attention-is-all-you-need": {
+      "pages": {
+        "chunk_size": 1000,
+        "overlap": 150,
+        "k": 5,
+        "chunk_ids": [
+          "chunk-0001",
+          "chunk-0002",
+          "chunk-0003",
+          "chunk-0004",
+          "chunk-0005",
+          "chunk-0006",
+          "chunk-0007",
+          "chunk-0008",
+          "chunk-0009",
+          "chunk-0010",
+          "chunk-0011",
+          "chunk-0012",
+          "chunk-0013",
+          "chunk-0014",
+          "chunk-0015",
+          "chunk-0016",
+          "chunk-0017",
+          "chunk-0018",
+          "chunk-0019",
+          "chunk-0020",
+          "chunk-0021",
+          "chunk-0022",
+          "chunk-0023",
+          "chunk-0024",
+          "chunk-0025",
+          "chunk-0026",
+          "chunk-0027",
+          "chunk-0028",
+          "chunk-0029",
+          "chunk-0030",
+          "chunk-0031",
+          "chunk-0032",
+          "chunk-0033",
+          "chunk-0034",
+          "chunk-0035",
+          "chunk-0036",
+          "chunk-0037",
+          "chunk-0038",
+          "chunk-0039",
+          "chunk-0040",
+          "chunk-0041",
+          "chunk-0042",
+          "chunk-0043",
+          "chunk-0044",
+          "chunk-0045",
+          "chunk-0046",
+          "chunk-0047",
+          "chunk-0048",
+          "chunk-0049",
+          "chunk-0050",
+          "chunk-0051",
+          "chunk-0052",
+          "chunk-0053",
+          "chunk-0054",
+          "chunk-0055",
+          "chunk-0056"
+        ]
+      },
+      "answerable_questions": 5,
+      "unanswerable_questions": 1
+    },
+    "retrieval-augmented-generation": {
+      "pages": {
+        "chunk_size": 1000,
+        "overlap": 150,
+        "k": 5,
+        "chunk_ids": [
+          "chunk-0001",
+          "chunk-0002",
+          "chunk-0003",
+          "chunk-0004",
+          "chunk-0005",
+          "chunk-0006",
+          "chunk-0007",
+          "chunk-0008",
+          "chunk-0009",
+          "chunk-0010",
+          "chunk-0011",
+          "chunk-0012",
+          "chunk-0013",
+          "chunk-0014",
+          "chunk-0015",
+          "chunk-0016",
+          "chunk-0017",
+          "chunk-0018",
+          "chunk-0019",
+          "chunk-0020",
+          "chunk-0021",
+          "chunk-0022",
+          "chunk-0023",
+          "chunk-0024",
+          "chunk-0025",
+          "chunk-0026",
+          "chunk-0027",
+          "chunk-0028",
+          "chunk-0029",
+          "chunk-0030",
+          "chunk-0031",
+          "chunk-0032",
+          "chunk-0033",
+          "chunk-0034",
+          "chunk-0035",
+          "chunk-0036",
+          "chunk-0037",
+          "chunk-0038",
+          "chunk-0039",
+          "chunk-0040",
+          "chunk-0041",
+          "chunk-0042",
+          "chunk-0043",
+          "chunk-0044",
+          "chunk-0045",
+          "chunk-0046",
+          "chunk-0047",
+          "chunk-0048",
+          "chunk-0049",
+          "chunk-0050",
+          "chunk-0051",
+          "chunk-0052",
+          "chunk-0053",
+          "chunk-0054",
+          "chunk-0055",
+          "chunk-0056",
+          "chunk-0057",
+          "chunk-0058",
+          "chunk-0059",
+          "chunk-0060",
+          "chunk-0061",
+          "chunk-0062",
+          "chunk-0063",
+          "chunk-0064",
+          "chunk-0065",
+          "chunk-0066",
+          "chunk-0067",
+          "chunk-0068",
+          "chunk-0069",
+          "chunk-0070",
+          "chunk-0071",
+          "chunk-0072",
+          "chunk-0073",
+          "chunk-0074",
+          "chunk-0075",
+          "chunk-0076",
+          "chunk-0077",
+          "chunk-0078",
+          "chunk-0079",
+          "chunk-0080",
+          "chunk-0081",
+          "chunk-0082",
+          "chunk-0083",
+          "chunk-0084",
+          "chunk-0085",
+          "chunk-0086",
+          "chunk-0087",
+          "chunk-0088",
+          "chunk-0089",
+          "chunk-0090",
+          "chunk-0091",
+          "chunk-0092",
+          "chunk-0093"
+        ]
+      },
+      "answerable_questions": 5,
+      "unanswerable_questions": 1
+    },
+    "textrank": {
+      "pages": {
+        "chunk_size": 1000,
+        "overlap": 150,
+        "k": 5,
+        "chunk_ids": [
+          "chunk-0001",
+          "chunk-0002",
+          "chunk-0003",
+          "chunk-0004",
+          "chunk-0005",
+          "chunk-0006",
+          "chunk-0007",
+          "chunk-0008",
+          "chunk-0009",
+          "chunk-0010",
+          "chunk-0011",
+          "chunk-0012",
+          "chunk-0013",
+          "chunk-0014",
+          "chunk-0015",
+          "chunk-0016",
+          "chunk-0017",
+          "chunk-0018",
+          "chunk-0019",
+          "chunk-0020",
+          "chunk-0021",
+          "chunk-0022",
+          "chunk-0023",
+          "chunk-0024",
+          "chunk-0025",
+          "chunk-0026",
+          "chunk-0027",
+          "chunk-0028",
+          "chunk-0029",
+          "chunk-0030",
+          "chunk-0031",
+          "chunk-0032",
+          "chunk-0033",
+          "chunk-0034",
+          "chunk-0035",
+          "chunk-0036",
+          "chunk-0037",
+          "chunk-0038",
+          "chunk-0039",
+          "chunk-0040",
+          "chunk-0041",
+          "chunk-0042",
+          "chunk-0043",
+          "chunk-0044",
+          "chunk-0045",
+          "chunk-0046",
+          "chunk-0047",
+          "chunk-0048",
+          "chunk-0049",
+          "chunk-0050",
+          "chunk-0051",
+          "chunk-0052",
+          "chunk-0053",
+          "chunk-0054",
+          "chunk-0055",
+          "chunk-0056"
+        ]
+      },
+      "answerable_questions": 5,
+      "unanswerable_questions": 1
+    }
+  },
+  "summarization": {
+    "lead": {
+      "macro_average": {
+        "rouge1": 0.33362687281800313,
+        "rouge2": 0.0918433809554317,
+        "rougeL": 0.18628254011792222
+      },
+      "per_paper": {
+        "attention-is-all-you-need": {
+          "rouge1": 0.3870967741935483,
+          "rouge2": 0.09302325581395349,
+          "rougeL": 0.20276497695852536
+        },
+        "retrieval-augmented-generation": {
+          "rouge1": 0.3211009174311927,
+          "rouge2": 0.08333333333333333,
+          "rougeL": 0.12844036697247707
+        },
+        "textrank": {
+          "rouge1": 0.2926829268292683,
+          "rouge2": 0.09917355371900828,
+          "rougeL": 0.22764227642276422
+        }
+      }
+    },
+    "textrank": {
+      "macro_average": {
+        "rouge1": 0.3265795060988748,
+        "rouge2": 0.08837571641437185,
+        "rougeL": 0.21119642353501752
+      },
+      "per_paper": {
+        "attention-is-all-you-need": {
+          "rouge1": 0.3173076923076923,
+          "rouge2": 0.038834951456310676,
+          "rougeL": 0.15384615384615385
+        },
+        "retrieval-augmented-generation": {
+          "rouge1": 0.36974789915966394,
+          "rouge2": 0.1271186440677966,
+          "rougeL": 0.25210084033613445
+        },
+        "textrank": {
+          "rouge1": 0.2926829268292683,
+          "rouge2": 0.09917355371900828,
+          "rougeL": 0.22764227642276422
+        }
+      }
+    }
+  },
+  "retrieval": {
+    "bm25": {
+      "question_level": {
+        "k1": {
+          "mean_precision": 0.4666666666666667,
+          "mean_recall": 0.23333333333333334
+        },
+        "k3": {
+          "mean_precision": 0.3555555555555555,
+          "mean_recall": 0.4722222222222222
+        },
+        "k5": {
+          "mean_precision": 0.2666666666666667,
+          "mean_recall": 0.5833333333333334,
+          "precision_95ci": [
+            0.18666666666666668,
+            0.34666666666666673
+          ],
+          "recall_95ci": [
+            0.40555555555555556,
+            0.7611111111111111
+          ]
+        }
+      },
+      "per_paper_k5": {
+        "attention-is-all-you-need": {
+          "precision": 0.32,
+          "recall": 0.7666666666666667
+        },
+        "retrieval-augmented-generation": {
+          "precision": 0.24000000000000005,
+          "recall": 0.55
+        },
+        "textrank": {
+          "precision": 0.24000000000000005,
+          "recall": 0.4333333333333333
+        }
+      }
+    },
+    "tfidf": {
+      "question_level": {
+        "k1": {
+          "mean_precision": 0.4666666666666667,
+          "mean_recall": 0.19444444444444445
+        },
+        "k3": {
+          "mean_precision": 0.4222222222222223,
+          "mean_recall": 0.5222222222222223
+        },
+        "k5": {
+          "mean_precision": 0.3333333333333333,
+          "mean_recall": 0.6777777777777777,
+          "precision_95ci": [
+            0.22666666666666663,
+            0.44000000000000006
+          ],
+          "recall_95ci": [
+            0.4444444444444445,
+            0.8777777777777778
+          ]
+        }
+      },
+      "per_paper_k5": {
+        "attention-is-all-you-need": {
+          "precision": 0.36,
+          "recall": 0.7333333333333333
+        },
+        "retrieval-augmented-generation": {
+          "precision": 0.32,
+          "recall": 0.7
+        },
+        "textrank": {
+          "precision": 0.32,
+          "recall": 0.6
+        }
+      }
+    }
+  },
+  "qa": {
+    "total_questions": 18,
+    "correct_abstentions": 3,
+    "unanswerable_questions": 3,
+    "unsupported_answers": 0,
+    "over_refusals": 1,
+    "answerable_questions": 15,
+    "human_review": {
+      "annotators": 1,
+      "mean_scores": {
+        "correctness_0_to_2": 1.3888888888888888,
+        "relevance_0_to_2": 1.3888888888888888,
+        "evidence_support_0_to_2": 1.8888888888888888,
+        "citation_accuracy_0_to_2": 1.3333333333333333
+      },
+      "ratings": [
+        {
+          "paper": "attention-is-all-you-need",
+          "question": "What architecture does the paper propose, and which mechanisms does it remove?",
+          "correctness_0_to_2": 2,
+          "relevance_0_to_2": 2,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 2,
+          "note": "Complete architecture answer with accurate citations."
+        },
+        {
+          "paper": "attention-is-all-you-need",
+          "question": "Which machine translation datasets and training-set sizes were used?",
+          "correctness_0_to_2": 1,
+          "relevance_0_to_2": 1,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "Includes French 36M but omits English-German 4.5M and adds irrelevant sentences."
+        },
+        {
+          "paper": "attention-is-all-you-need",
+          "question": "What BLEU scores did the big Transformer achieve in the main comparison table?",
+          "correctness_0_to_2": 1,
+          "relevance_0_to_2": 1,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "Reports 28.4 and the prose 41.0 result but not the requested table value 41.8."
+        },
+        {
+          "paper": "attention-is-all-you-need",
+          "question": "What hardware and training schedule were used for the big models?",
+          "correctness_0_to_2": 1,
+          "relevance_0_to_2": 1,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "Correct hardware but omits steps and duration."
+        },
+        {
+          "paper": "attention-is-all-you-need",
+          "question": "What future research directions did the authors identify?",
+          "correctness_0_to_2": 0,
+          "relevance_0_to_2": 0,
+          "evidence_support_0_to_2": 0,
+          "citation_accuracy_0_to_2": 0,
+          "note": "Over-refusal although future directions are explicitly reported."
+        },
+        {
+          "paper": "attention-is-all-you-need",
+          "question": "What ImageNet classification accuracy did the Transformer achieve?",
+          "correctness_0_to_2": 2,
+          "relevance_0_to_2": 2,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 2,
+          "note": "Correctly acknowledges unsupported ImageNet question."
+        },
+        {
+          "paper": "retrieval-augmented-generation",
+          "question": "Which parametric and non-parametric components form the RAG model?",
+          "correctness_0_to_2": 2,
+          "relevance_0_to_2": 2,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 2,
+          "note": "Complete component answer."
+        },
+        {
+          "paper": "retrieval-augmented-generation",
+          "question": "What external knowledge source and retriever does the implementation use?",
+          "correctness_0_to_2": 1,
+          "relevance_0_to_2": 1,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "Identifies Wikipedia but omits DPR and includes irrelevant discussion."
+        },
+        {
+          "paper": "retrieval-augmented-generation",
+          "question": "How do RAG-Sequence and RAG-Token differ?",
+          "correctness_0_to_2": 1,
+          "relevance_0_to_2": 1,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "Discusses decoding but misses same-document versus per-token distinction."
+        },
+        {
+          "paper": "retrieval-augmented-generation",
+          "question": "Which four open-domain QA datasets were evaluated?",
+          "correctness_0_to_2": 1,
+          "relevance_0_to_2": 2,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "Names two of four datasets."
+        },
+        {
+          "paper": "retrieval-augmented-generation",
+          "question": "What generation qualities improved relative to the BART baseline?",
+          "correctness_0_to_2": 2,
+          "relevance_0_to_2": 1,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "Correct qualities with additional irrelevant sentences."
+        },
+        {
+          "paper": "retrieval-augmented-generation",
+          "question": "What Exact Match score did RAG achieve on SQuAD?",
+          "correctness_0_to_2": 2,
+          "relevance_0_to_2": 2,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 2,
+          "note": "Correctly acknowledges unsupported SQuAD question."
+        },
+        {
+          "paper": "textrank",
+          "question": "What is TextRank and what general approach does it use?",
+          "correctness_0_to_2": 1,
+          "relevance_0_to_2": 1,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "True portability statement but no graph-based definition."
+        },
+        {
+          "paper": "textrank",
+          "question": "Which two extraction applications are investigated?",
+          "correctness_0_to_2": 2,
+          "relevance_0_to_2": 2,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 2,
+          "note": "Complete extraction-task answer."
+        },
+        {
+          "paper": "textrank",
+          "question": "How are sentences connected in the TextRank sentence-extraction graph?",
+          "correctness_0_to_2": 1,
+          "relevance_0_to_2": 1,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "Mentions edges and weights but omits content-overlap similarity."
+        },
+        {
+          "paper": "textrank",
+          "question": "Which datasets were used to evaluate keyword and sentence extraction?",
+          "correctness_0_to_2": 1,
+          "relevance_0_to_2": 1,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 1,
+          "note": "Includes DUC 2002 but omits the Inspec dataset."
+        },
+        {
+          "paper": "textrank",
+          "question": "Why is TextRank portable across domains and languages?",
+          "correctness_0_to_2": 2,
+          "relevance_0_to_2": 2,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 2,
+          "note": "Complete portability explanation."
+        },
+        {
+          "paper": "textrank",
+          "question": "What F1 score did TextRank achieve on SQuAD?",
+          "correctness_0_to_2": 2,
+          "relevance_0_to_2": 2,
+          "evidence_support_0_to_2": 2,
+          "citation_accuracy_0_to_2": 2,
+          "note": "Correctly acknowledges unsupported SQuAD question."
+        }
+      ]
+    }
+  },
+  "initial_comparison": {
+    "retrieval_k5": {
+      "bm25": {
+        "mean_precision": 0.2800000000000001,
+        "mean_recall": 0.6055555555555555,
+        "precision_95ci": [
+          0.20000000000000004,
+          0.36000000000000004
+        ],
+        "recall_95ci": [
+          0.42777777777777776,
+          0.7777777777777778
+        ]
+      },
+      "tfidf": {
+        "mean_precision": 0.3333333333333333,
+        "mean_recall": 0.6777777777777777,
+        "precision_95ci": [
+          0.22666666666666663,
+          0.44000000000000006
+        ],
+        "recall_95ci": [
+          0.4444444444444445,
+          0.8777777777777778
+        ]
+      }
+    },
+    "qa": {
+      "total_questions": 18,
+      "correct_abstentions": 0,
+      "unanswerable_questions": 3,
+      "unsupported_answers": 3,
+      "over_refusals": 0,
+      "answerable_questions": 15
+    }
+  }
+}

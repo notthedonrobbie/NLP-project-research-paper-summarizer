@@ -1,0 +1,331 @@
+{
+  "document": "attention-is-all-you-need",
+  "configuration": {
+    "chunk_size": 1000,
+    "overlap": 150,
+    "k": 5,
+    "chunk_ids": [
+      "chunk-0001",
+      "chunk-0002",
+      "chunk-0003",
+      "chunk-0004",
+      "chunk-0005",
+      "chunk-0006",
+      "chunk-0007",
+      "chunk-0008",
+      "chunk-0009",
+      "chunk-0010",
+      "chunk-0011",
+      "chunk-0012",
+      "chunk-0013",
+      "chunk-0014",
+      "chunk-0015",
+      "chunk-0016",
+      "chunk-0017",
+      "chunk-0018",
+      "chunk-0019",
+      "chunk-0020",
+      "chunk-0021",
+      "chunk-0022",
+      "chunk-0023",
+      "chunk-0024",
+      "chunk-0025",
+      "chunk-0026",
+      "chunk-0027",
+      "chunk-0028",
+      "chunk-0029",
+      "chunk-0030",
+      "chunk-0031",
+      "chunk-0032",
+      "chunk-0033",
+      "chunk-0034",
+      "chunk-0035",
+      "chunk-0036",
+      "chunk-0037",
+      "chunk-0038",
+      "chunk-0039",
+      "chunk-0040",
+      "chunk-0041",
+      "chunk-0042",
+      "chunk-0043",
+      "chunk-0044",
+      "chunk-0045",
+      "chunk-0046",
+      "chunk-0047",
+      "chunk-0048",
+      "chunk-0049",
+      "chunk-0050",
+      "chunk-0051",
+      "chunk-0052",
+      "chunk-0053",
+      "chunk-0054",
+      "chunk-0055",
+      "chunk-0056"
+    ]
+  },
+  "summarization": {
+    "lead": {
+      "overview": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 Englishto-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature.",
+      "sections": {
+        "Research problem": "31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA. arXiv:1706.03762v7 [cs.CL] 2 Aug 2023 Recurrent neural networks, long short-term memory [13] and gated recurrent [7] neural networks in particular, have been firmly established as state of the art approaches in sequence modeling and transduction problems such as language modeling and machine translation [ 35, 2, 5]. Learning long-range dependencies is a key challenge in many sequence transduction tasks.",
+        "Research objectives": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.",
+        "Proposed methodology": "Gomez∗ † University of Toronto aidan@cs.toronto.edu Łukasz Kaiser∗ Google Brain lukaszkaiser@google.com Illia Polosukhin∗ ‡ illia.polosukhin@gmail.com Abstract The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train.",
+        "Dataset and experimental setup": "Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Llion also experimented with novel model variants, was responsible for our initial codebase, and efficient inference and visualizations. We also experimented with using learned positional embeddings [9] instead, and found that the two versions produced nearly identical results (see Table 3 row (E)).",
+        "Main findings": "6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model. Table 2 summarizes our results and compares our translation quality and training costs to other model architectures from the literature.",
+        "Limitations and future work": "We are excited about the future of attention-based models and plan to apply them to other tasks."
+      },
+      "rouge": {
+        "rouge1": 0.3870967741935483,
+        "rouge2": 0.09302325581395349,
+        "rougeL": 0.20276497695852536
+      }
+    },
+    "textrank": {
+      "overview": "The dominant sequence transduction models are based on complex recurrent or convolutional neural networks that include an encoder and a decoder. The best performing models also connect the encoder and decoder through an attention mechanism. Our model achieves 28.4 BLEU on the WMT 2014 Englishto-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. Ashish, with Illia, designed and implemented the first Transformer models and has been crucially involved in every aspect of this work. Niki designed, implemented, tuned and evaluated countless model variants in our original codebase and tensor2tensor.",
+      "sections": {
+        "Research problem": "31st Conference on Neural Information Processing Systems (NIPS 2017), Long Beach, CA, USA. arXiv:1706.03762v7 [cs.CL] 2 Aug 2023 Recurrent neural networks, long short-term memory [13] and gated recurrent [7] neural networks in particular, have been firmly established as state of the art approaches in sequence modeling and transduction problems such as language modeling and machine translation [ 35, 2, 5]. Learning long-range dependencies is a key challenge in many sequence transduction tasks.",
+        "Research objectives": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output.",
+        "Proposed methodology": "Our model achieves 28.4 BLEU on the WMT 2014 Englishto-German translation task, improving over the existing best results, including ensembles, by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. Niki designed, implemented, tuned and evaluated countless model variants in our original codebase and tensor2tensor.",
+        "Dataset and experimental setup": "5.1 Training Data and Batching We trained on the standard WMT 2014 English-German dataset consisting of about 4.5 million sentence pairs. For English-French, we used the significantly larger WMT 2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [38]. We performed only a small number of experiments to select the dropout, both attention and residual (section 5.4), learning rates and beam size on the Section 22 development set, all other parameters remained unchanged from the English-to-German base translation model.",
+        "Main findings": "6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model. Our results in Table 4 show that despite the lack of task-specific tuning our model performs surprisingly well, yielding better results than all previously reported models with the exception of the Recurrent Neural Network Grammar [8].",
+        "Limitations and future work": "We are excited about the future of attention-based models and plan to apply them to other tasks."
+      },
+      "rouge": {
+        "rouge1": 0.3173076923076923,
+        "rouge2": 0.038834951456310676,
+        "rougeL": 0.15384615384615385
+      }
+    }
+  },
+  "retrieval": {
+    "bm25": {
+      "mean_precision_at_k": 0.32,
+      "mean_recall_at_k": 0.7666666666666667,
+      "questions": [
+        {
+          "question": "What architecture does the paper propose, and which mechanisms does it remove?",
+          "retrieved_chunk_ids": [
+            "chunk-0001",
+            "chunk-0006",
+            "chunk-0055",
+            "chunk-0056",
+            "chunk-0008"
+          ],
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.3333333333333333
+        },
+        {
+          "question": "Which machine translation datasets and training-set sizes were used?",
+          "retrieved_chunk_ids": [
+            "chunk-0031",
+            "chunk-0036",
+            "chunk-0035",
+            "chunk-0029",
+            "chunk-0045"
+          ],
+          "precision_at_k": 0.2,
+          "recall_at_k": 1.0
+        },
+        {
+          "question": "What BLEU scores did the big Transformer achieve in the main comparison table?",
+          "retrieved_chunk_ids": [
+            "chunk-0035",
+            "chunk-0033",
+            "chunk-0002",
+            "chunk-0034",
+            "chunk-0055"
+          ],
+          "precision_at_k": 0.6,
+          "recall_at_k": 1.0
+        },
+        {
+          "question": "What hardware and training schedule were used for the big models?",
+          "retrieved_chunk_ids": [
+            "chunk-0032",
+            "chunk-0035",
+            "chunk-0036",
+            "chunk-0031",
+            "chunk-0055"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 1.0
+        },
+        {
+          "question": "What future research directions did the authors identify?",
+          "retrieved_chunk_ids": [
+            "chunk-0056",
+            "chunk-0055",
+            "chunk-0044",
+            "chunk-0004",
+            "chunk-0001"
+          ],
+          "precision_at_k": 0.2,
+          "recall_at_k": 0.5
+        }
+      ]
+    },
+    "tfidf": {
+      "mean_precision_at_k": 0.36,
+      "mean_recall_at_k": 0.7333333333333333,
+      "questions": [
+        {
+          "question": "What architecture does the paper propose, and which mechanisms does it remove?",
+          "retrieved_chunk_ids": [
+            "chunk-0006",
+            "chunk-0001",
+            "chunk-0011",
+            "chunk-0002",
+            "chunk-0032"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 0.6666666666666666
+        },
+        {
+          "question": "Which machine translation datasets and training-set sizes were used?",
+          "retrieved_chunk_ids": [
+            "chunk-0043",
+            "chunk-0035",
+            "chunk-0036",
+            "chunk-0053",
+            "chunk-0002"
+          ],
+          "precision_at_k": 0.0,
+          "recall_at_k": 0.0
+        },
+        {
+          "question": "What BLEU scores did the big Transformer achieve in the main comparison table?",
+          "retrieved_chunk_ids": [
+            "chunk-0035",
+            "chunk-0033",
+            "chunk-0044",
+            "chunk-0002",
+            "chunk-0038"
+          ],
+          "precision_at_k": 0.6,
+          "recall_at_k": 1.0
+        },
+        {
+          "question": "What hardware and training schedule were used for the big models?",
+          "retrieved_chunk_ids": [
+            "chunk-0032",
+            "chunk-0036",
+            "chunk-0035",
+            "chunk-0043",
+            "chunk-0031"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 1.0
+        },
+        {
+          "question": "What future research directions did the authors identify?",
+          "retrieved_chunk_ids": [
+            "chunk-0044",
+            "chunk-0004",
+            "chunk-0001",
+            "chunk-0029",
+            "chunk-0003"
+          ],
+          "precision_at_k": 0.4,
+          "recall_at_k": 1.0
+        }
+      ]
+    }
+  },
+  "qa_predictions": [
+    {
+      "question": "What architecture does the paper propose, and which mechanisms does it remove?",
+      "answerable": true,
+      "reference_answer": "The paper proposes the Transformer, an architecture based solely on attention that dispenses with recurrence and convolutions.",
+      "generated_answer": "We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. [S1] In this work we propose the Transformer, a model architecture eschewing recurrence and instead relying entirely on an attention mechanism to draw global dependencies between input and output. [S2]",
+      "cited_pages": [
+        1,
+        2
+      ],
+      "insufficient_evidence": false,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "Which machine translation datasets and training-set sizes were used?",
+      "answerable": true,
+      "reference_answer": "The study used WMT 2014 English-German with about 4.5 million sentence pairs and WMT 2014 English-French with 36 million sentences.",
+      "generated_answer": "length n is smaller than the representation dimensionality d, which is most often the case with sentence representations used by state-of-the-art models in machine translations, such as word-piece [38] and byte-pair [31] representations. [S4] For English-French, we used the significantly larger WMT 2014 English-French dataset consisting of 36M sentences and split tokens into a 32000 word-piece vocabulary [38]. [S1] We used beam search with a beam size of 4 and length penalty α = 0.6 [38]. [S2]",
+      "cited_pages": [
+        7,
+        8
+      ],
+      "insufficient_evidence": false,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "What BLEU scores did the big Transformer achieve in the main comparison table?",
+      "answerable": true,
+      "reference_answer": "The comparison table reports 28.4 BLEU for English-German and 41.8 BLEU for English-French for the big Transformer.",
+      "generated_answer": "6.1 Machine Translation On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4. [S1] Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the English-to-German and English-to-French newstest2014 tests at a fraction of the training cost. [S2] On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model. [S1]",
+      "cited_pages": [
+        8
+      ],
+      "insufficient_evidence": false,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "What hardware and training schedule were used for the big models?",
+      "answerable": true,
+      "reference_answer": "Training used one machine with eight NVIDIA P100 GPUs. Big models used approximately one-second steps and 300,000 steps, corresponding to 3.5 days.",
+      "generated_answer": "5.2 Hardware and Schedule We trained our models on one machine with 8 NVIDIA P100 GPUs. [S1] On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model. [S2] The Transformer (big) model trained for English-to-French used dropout rate Pdrop = 0.1, instead of 0.3. [S2]",
+      "cited_pages": [
+        7,
+        8
+      ],
+      "insufficient_evidence": false,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "What future research directions did the authors identify?",
+      "answerable": true,
+      "reference_answer": "The authors proposed applying attention to other tasks and modalities, investigating local restricted attention for large inputs and outputs, and making generation less sequential.",
+      "generated_answer": "The uploaded paper does not provide enough evidence to answer this question.",
+      "cited_pages": [],
+      "insufficient_evidence": true,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    },
+    {
+      "question": "What ImageNet classification accuracy did the Transformer achieve?",
+      "answerable": false,
+      "reference_answer": "Not reported. ImageNet classification is not an evaluation task in this paper.",
+      "generated_answer": "The uploaded paper does not provide enough evidence to answer this question.",
+      "cited_pages": [],
+      "insufficient_evidence": true,
+      "human_scores": {
+        "correctness_0_to_2": null,
+        "relevance_0_to_2": null,
+        "evidence_support_0_to_2": null,
+        "citation_accuracy_0_to_2": null
+      }
+    }
+  ]
+}

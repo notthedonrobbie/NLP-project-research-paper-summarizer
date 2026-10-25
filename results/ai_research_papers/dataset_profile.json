@@ -1,0 +1,54 @@
+{
+  "dataset": "ai_research_papers.csv",
+  "sha256": "feb8262a4512b5677797d16c4ca65435d19ea0d2d286bfe9defc475c820863f8",
+  "rows": 600,
+  "columns": [
+    "Title",
+    "Authors",
+    "Published",
+    "Summary",
+    "Link"
+  ],
+  "missing_cells": 0,
+  "duplicate_rows": 0,
+  "duplicate_normalized_titles": 0,
+  "unique_links": 600,
+  "arxiv_abstract_links": 600,
+  "date_range_utc": [
+    "2008-11-21T09:29:54+00:00",
+    "2025-04-10T18:44:41+00:00"
+  ],
+  "papers_by_year": {
+    "2008": 1,
+    "2015": 1,
+    "2016": 1,
+    "2017": 7,
+    "2018": 7,
+    "2019": 18,
+    "2020": 33,
+    "2021": 49,
+    "2022": 60,
+    "2023": 112,
+    "2024": 208,
+    "2025": 103
+  },
+  "abstract_words": {
+    "total": 105022,
+    "minimum": 28,
+    "median": 175.0,
+    "mean": 175.03666666666666,
+    "p90": 249.0,
+    "maximum": 305
+  },
+  "title_words": {
+    "median": 10.0,
+    "mean": 10.621666666666666,
+    "maximum": 29
+  },
+  "authors_per_paper_comma_separated_estimate": {
+    "median": 3.0,
+    "mean": 3.665,
+    "maximum": 25
+  },
+  "scope_note": "Metadata and author abstracts only; no full text, relevance judgments, reference-generated summaries, or QA annotations."
+}

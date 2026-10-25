@@ -1,0 +1,38 @@
+{
+  "paper_id": "attention-is-all-you-need",
+  "reference_summary": "The paper introduces the Transformer, an encoder-decoder sequence-transduction architecture that replaces recurrence and convolution with attention. On WMT 2014 English-German and English-French translation, the model improves translation quality while increasing parallelism and reducing training time. The reported large-model results include 28.4 BLEU for English-German and 41.8 BLEU for English-French in the comparison table. Additional experiments on English constituency parsing indicate that the architecture can generalize beyond machine translation.",
+  "annotation_note": "Questions and references were written from the source paper before inspecting generated answers. Relevant chunks were judged against fixed 1000-character/150-overlap chunking.",
+  "questions": [
+    {
+      "question": "What architecture does the paper propose, and which mechanisms does it remove?",
+      "reference_answer": "The paper proposes the Transformer, an architecture based solely on attention that dispenses with recurrence and convolutions.",
+      "relevant_chunk_ids": ["chunk-0001", "chunk-0002", "chunk-0044"]
+    },
+    {
+      "question": "Which machine translation datasets and training-set sizes were used?",
+      "reference_answer": "The study used WMT 2014 English-German with about 4.5 million sentence pairs and WMT 2014 English-French with 36 million sentences.",
+      "relevant_chunk_ids": ["chunk-0031"]
+    },
+    {
+      "question": "What BLEU scores did the big Transformer achieve in the main comparison table?",
+      "reference_answer": "The comparison table reports 28.4 BLEU for English-German and 41.8 BLEU for English-French for the big Transformer.",
+      "relevant_chunk_ids": ["chunk-0002", "chunk-0033", "chunk-0035"]
+    },
+    {
+      "question": "What hardware and training schedule were used for the big models?",
+      "reference_answer": "Training used one machine with eight NVIDIA P100 GPUs. Big models used approximately one-second steps and 300,000 steps, corresponding to 3.5 days.",
+      "relevant_chunk_ids": ["chunk-0032", "chunk-0035"]
+    },
+    {
+      "question": "What future research directions did the authors identify?",
+      "reference_answer": "The authors proposed applying attention to other tasks and modalities, investigating local restricted attention for large inputs and outputs, and making generation less sequential.",
+      "relevant_chunk_ids": ["chunk-0029", "chunk-0044"]
+    },
+    {
+      "question": "What ImageNet classification accuracy did the Transformer achieve?",
+      "answerable": false,
+      "reference_answer": "Not reported. ImageNet classification is not an evaluation task in this paper.",
+      "relevant_chunk_ids": []
+    }
+  ]
+}

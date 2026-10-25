@@ -1,0 +1,60 @@
+<svg width="1200" height="650" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" viewBox="0 0 1200 650">
+<rect width="1200" height="650" x="0" y="0" fill="#ffffff"></rect>
+<path d="M80 560.5L1160 560.5" fill="none" pointer-events="visible" stroke="#dbdee4" class="zr1-cls-5"></path>
+<path d="M80 447.5L1160 447.5" fill="none" pointer-events="visible" stroke="#dbdee4" class="zr1-cls-5"></path>
+<path d="M80 335.5L1160 335.5" fill="none" pointer-events="visible" stroke="#dbdee4" class="zr1-cls-5"></path>
+<path d="M80 222.5L1160 222.5" fill="none" pointer-events="visible" stroke="#dbdee4" class="zr1-cls-5"></path>
+<path d="M80 110.5L1160 110.5" fill="none" pointer-events="visible" stroke="#dbdee4" class="zr1-cls-5"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" xml:space="preserve" y="-6" transform="matrix(0,-1,1,0,30,335)" fill="#54555a">F1 score (0–1)</text>
+<path d="M80 560.5L1160 560.5" fill="none" pointer-events="visible" stroke="#54555a" stroke-linecap="round" class="zr1-cls-5"></path>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Arial, sans-serif;" transform="translate(72 560)" fill="#54555a">0</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Arial, sans-serif;" transform="translate(72 447.5)" fill="#54555a">0.1</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Arial, sans-serif;" transform="translate(72 335)" fill="#54555a">0.2</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Arial, sans-serif;" transform="translate(72 222.5)" fill="#54555a">0.3</text>
+<text dominant-baseline="central" text-anchor="end" style="font-size:12px;font-family:Arial, sans-serif;" transform="translate(72 110)" fill="#54555a">0.4</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" y="6" transform="translate(260 568)" fill="#54555a">ROUGE-1</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" y="6" transform="translate(620 568)" fill="#54555a">ROUGE-2</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" y="6" transform="translate(980 568)" fill="#54555a">ROUGE-L</text>
+<path d="M165.5 560l90 0l0 -373.5l-90 0Z" fill="#c68a3c" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M525.5 560l90 0l0 -113.6l-90 0Z" fill="#c68a3c" ecmeta_series_index="0" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M885.5 560l90 0l0 -210.4l-90 0Z" fill="#c68a3c" ecmeta_series_index="0" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr1-cls-6"></path>
+<path d="M264.5 560l90 0l0 -388.1l-90 0Z" fill="#7b658e" ecmeta_series_index="1" ecmeta_data_index="0" ecmeta_ssr_type="chart" class="zr1-cls-7"></path>
+<path d="M624.5 560l90 0l0 -119.2l-90 0Z" fill="#7b658e" ecmeta_series_index="1" ecmeta_data_index="1" ecmeta_ssr_type="chart" class="zr1-cls-7"></path>
+<path d="M984.5 560l90 0l0 -201.4l-90 0Z" fill="#7b658e" ecmeta_series_index="1" ecmeta_data_index="2" ecmeta_ssr_type="chart" class="zr1-cls-7"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" y="-6" transform="translate(210.5 181.5)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">0.332</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" y="-6" transform="translate(570.5 441.375)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">0.101</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" y="-6" transform="translate(930.5 344.625)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">0.187</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" y="-6" transform="translate(309.5 166.875)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">0.345</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" y="-6" transform="translate(669.5 435.75)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">0.106</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" y="-6" transform="translate(1029.5 353.625)" fill="#333" stroke="rgb(255,255,255)" stroke-width="2" paint-order="stroke" stroke-miterlimit="2">0.179</text>
+<path d="M-5 -5l160.9 0l0 24l-160.9 0Z" transform="translate(524.54 621)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#b7b9be" stroke-width="0" class="zr1-cls-5"></path>
+<path d="M3.5 0L21.5 0A3.5 3.5 0 0 1 25 3.5L25 10.5A3.5 3.5 0 0 1 21.5 14L3.5 14A3.5 3.5 0 0 1 0 10.5L0 3.5A3.5 3.5 0 0 1 3.5 0Z" transform="translate(524.54 621)" fill="#c68a3c" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="legend" ecmeta_silent="true" class="zr1-cls-5"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Arial, sans-serif;" x="30" y="7" transform="translate(524.54 621)" fill="#54555a">LEAD</text>
+<path d="M0 0l61.4 0l0 14l-61.4 0Z" transform="translate(524.54 621)" fill="none" pointer-events="visible" ecmeta_series_index="0" ecmeta_data_index="0" ecmeta_ssr_type="legend" class="zr1-cls-8"></path>
+<path d="M3.5 0L21.5 0A3.5 3.5 0 0 1 25 3.5L25 10.5A3.5 3.5 0 0 1 21.5 14L3.5 14A3.5 3.5 0 0 1 0 10.5L0 3.5A3.5 3.5 0 0 1 3.5 0Z" transform="translate(593.98 621)" fill="#7b658e" ecmeta_series_index="1" ecmeta_data_index="1" ecmeta_ssr_type="legend" ecmeta_silent="true" class="zr1-cls-5"></path>
+<text dominant-baseline="central" text-anchor="start" style="font-size:12px;font-family:Arial, sans-serif;" x="30" y="7" transform="translate(593.98 621)" fill="#54555a">TextRank</text>
+<path d="M0 0l81.5 0l0 14l-81.5 0Z" transform="translate(593.98 621)" fill="none" pointer-events="visible" ecmeta_series_index="1" ecmeta_data_index="1" ecmeta_ssr_type="legend" class="zr1-cls-8"></path>
+<path d="M-256 -5l512.1 0l0 50l-512.1 0Z" transform="translate(600 20)" fill="rgb(0,0,0)" fill-opacity="0" stroke="#3c3c41" stroke-width="0" class="zr1-cls-5"></path>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:18px;font-family:Arial, sans-serif;font-weight:bold;" xml:space="preserve" y="9" transform="translate(600 20)" fill="#3c3c41">Six-sentence extractive summarization</text>
+<text dominant-baseline="central" text-anchor="middle" style="font-size:12px;font-family:Arial, sans-serif;" xml:space="preserve" y="34" transform="translate(600 20)" fill="#86878c">Macro-average ROUGE against author abstracts; abstract and references excluded from input</text>
+<style ><![CDATA[
+.zr1-cls-5:hover {
+pointer-events:none;
+}
+.zr1-cls-6:hover {
+cursor:pointer;
+fill:rgba(217,151,66,1);
+}
+.zr1-cls-7:hover {
+cursor:pointer;
+fill:rgba(135,111,156,1);
+}
+.zr1-cls-8:hover {
+cursor:pointer;
+fill:rgba(0,0,0,0);
+}
+
+]]>
+
+</style>
+</svg>

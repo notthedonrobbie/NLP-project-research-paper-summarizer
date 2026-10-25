@@ -1,0 +1,38 @@
+{
+  "paper_id": "textrank",
+  "reference_summary": "TextRank is a graph-based ranking approach for natural-language text. The paper applies it to unsupervised keyword extraction and sentence extraction for summarization. Text units become graph vertices, their relationships become edges, and recursive ranking identifies central units. Evaluations use 500 Inspec abstracts for keyword extraction and 567 DUC 2002 news articles for single-document summarization. The method performs competitively with prior systems without requiring domain-specific or language-specific annotated training corpora.",
+  "annotation_note": "Questions and references were written from the source paper before inspecting generated answers. Relevant chunks were judged against fixed 1000-character/150-overlap chunking.",
+  "questions": [
+    {
+      "question": "What is TextRank and what general approach does it use?",
+      "reference_answer": "TextRank is a graph-based ranking model for text processing that uses information drawn from the whole text to make local ranking and selection decisions.",
+      "relevant_chunk_ids": ["chunk-0001", "chunk-0003", "chunk-0054"]
+    },
+    {
+      "question": "Which two extraction applications are investigated?",
+      "reference_answer": "The paper investigates unsupervised keyword extraction and sentence extraction for automatic summarization.",
+      "relevant_chunk_ids": ["chunk-0001", "chunk-0003", "chunk-0033"]
+    },
+    {
+      "question": "How are sentences connected in the TextRank sentence-extraction graph?",
+      "reference_answer": "Each sentence is a vertex, and sentences are connected according to a similarity relation based on their content overlap rather than short-context co-occurrence.",
+      "relevant_chunk_ids": ["chunk-0034", "chunk-0043"]
+    },
+    {
+      "question": "Which datasets were used to evaluate keyword and sentence extraction?",
+      "reference_answer": "Keyword extraction used 500 Inspec abstracts with manually assigned keywords. Sentence extraction used 567 news articles from DUC 2002 with two manual reference summaries per article.",
+      "relevant_chunk_ids": ["chunk-0024", "chunk-0046", "chunk-0047"]
+    },
+    {
+      "question": "Why is TextRank portable across domains and languages?",
+      "reference_answer": "It is fully unsupervised and does not require training corpora, deep linguistic knowledge, or domain- and language-specific annotated data.",
+      "relevant_chunk_ids": ["chunk-0048", "chunk-0050", "chunk-0054"]
+    },
+    {
+      "question": "What F1 score did TextRank achieve on SQuAD?",
+      "answerable": false,
+      "reference_answer": "Not reported. The paper evaluates keyword extraction and summarization, not SQuAD question answering.",
+      "relevant_chunk_ids": []
+    }
+  ]
+}
