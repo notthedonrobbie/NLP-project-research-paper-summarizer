@@ -38,8 +38,3 @@
 - The earlier abstract-only and three-paper experiments are archived separately and must not be mixed with current results.
 - Bulk PDFs and extracted full-text JSON are local-only and excluded from Git.
 
-## Final external step
-
-- [ ] Set the student's own Git author identity, commit the staged files, create a GitHub or OSF repository under their account, push `main`, and paste the resulting URL into the submission portal. Exact GitHub commands are in `README.md`.
-
-Public publication is intentionally not performed by project automation. Before publishing, the student should confirm authorship details, course policy, dataset provenance/licensing, and that no private files or credentials have been added.

@@ -228,11 +228,11 @@ Open `notebooks/research_assistant_colab.ipynb` in Colab. Upload or clone this p
 `SUBMISSION_CHECKLIST.md` maps every assignment requirement to its artifact. The remaining external action is to publish under the student's own GitHub/OSF account and insert the resulting URL in the submission portal. For GitHub, set your own author identity, commit the staged files, add the new repository as `origin`, and push:
 
 ```bash
-git config user.name "Your Name"
-git config user.email "you@example.com"
+git config user.name "notthedonrobbie"
+git config user.email "rjnprsnth@gmail.com"
 git commit -m "Complete PaperTrail NLP research assistant"
-git remote add origin YOUR_REPOSITORY_URL
+git remote add origin https://github.com/notthedonrobbie/NLP-project-research-paper-summarizer
 git push -u origin main
 ```
 
-Do not use a placeholder identity in the public submission.
+
